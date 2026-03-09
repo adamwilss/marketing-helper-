@@ -15,6 +15,9 @@
         href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&family=Playfair+Display:ital,wght@0,400;0,600;0,700;0,900;1,400&display=swap"
         rel="stylesheet">
 
+    <!-- Three.js for Liquid Gradient Background -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+
     <link rel="stylesheet" href="styles.css">
 </head>
 
@@ -42,6 +45,7 @@
 
     <!-- Hero Section -->
     <header class="hero" id="hero">
+        <div id="liquid-canvas-wrapper" class="liquid-canvas-wrapper"></div>
         <div class="hero-overlay"></div>
         <div id="hero-particles" class="hero-particles"></div>
         <div class="hero-content">
@@ -216,6 +220,7 @@
     </footer>
 
     <script src="script.js"></script>
+    <script src="gradient.js"></script>
 </body>
 
 </html>

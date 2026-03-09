@@ -505,8 +505,7 @@ a {
     height: 500px;
     border-radius: 8px;
     background-color: #1a1a1a;
-    /* background-image removed - no image available */
-    position: relative;
+        position: relative;
     overflow: hidden;
     box-shadow: 0 20px 40px rgba(0, 0, 0, 0.5);
     background-size: cover;

@@ -49,6 +49,7 @@ document.addEventListener('DOMContentLoaded', () => {
     initScrollReveal();
     renderEvents();
     initCountdown();
+    initParticles();
 });
 
 // Navbar Scroll Effect
@@ -188,4 +189,29 @@ function initCountdown() {
 
     updateCountdown();
     const interval = setInterval(updateCountdown, 1000);
+}
+
+// Hero Particles Background
+function initParticles() {
+    const particleContainer = document.getElementById('hero-particles');
+    if (!particleContainer) return;
+
+    for (let i = 0; i < 25; i++) {
+        const particle = document.createElement('div');
+        particle.classList.add('particle');
+
+        // Random size between 3px and 12px
+        const size = Math.random() * 9 + 3;
+        particle.style.width = `${size}px`;
+        particle.style.height = `${size}px`;
+
+        // Random start position
+        particle.style.left = `${Math.random() * 100}%`;
+
+        // Random animation duration and delay for organic feel
+        particle.style.animationDuration = `${Math.random() * 12 + 8}s`;
+        particle.style.animationDelay = `${Math.random() * 5}s`;
+
+        particleContainer.appendChild(particle);
+    }
 }

@@ -108,8 +108,13 @@ export default function Home() {
         <div className="hero-haze" />
         <div id="hero-particles" className="hero-particles"></div>
         <div className="hero-content">
-          <h3 className="hero-subtitle fade-up">THE BOWDON ROOMS PRESENTS</h3>
-          <h1 className="hero-title fade-up delay-1">ROCK <span className="gold-text">&amp;</span> POUR</h1>
+          <h3 className="hero-subtitle fade-up">
+            <span className="subtitle-line" />
+            THE BOWDON ROOMS PRESENTS
+            <span className="subtitle-line" />
+          </h3>
+          <div className="hero-title-divider fade-up" />
+          <h1 className="hero-title fade-up delay-1">ROCK <span className="hero-amp">&amp;</span> POUR</h1>
 
           <div className="hero-highlights fade-up delay-2">
             <div className="highlight-item">ONE TICKET. ALL INCLUSIVE.</div>

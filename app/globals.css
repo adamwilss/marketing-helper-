@@ -54,9 +54,6 @@ a {
     color: var(--color-gold);
 }
 
-.hero-title .gold-text {
-    -webkit-text-fill-color: var(--color-gold);
-}
 
 .text-center {
     text-align: center;
@@ -368,50 +365,69 @@ a {
 
 .hero-subtitle {
     font-family: 'Montserrat', sans-serif;
-    font-size: 1rem;
-    letter-spacing: 8px;
+    font-size: 0.75rem;
+    letter-spacing: 6px;
     text-transform: uppercase;
-    margin-bottom: 1rem;
-    color: var(--color-text-muted);
-    font-weight: 600;
+    margin-bottom: 0.8rem;
+    color: rgba(255, 255, 255, 0.5);
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1.2rem;
+}
+
+.subtitle-line {
+    display: block;
+    width: 60px;
+    height: 1px;
+    background: linear-gradient(to right, transparent, var(--color-gold));
+    opacity: 0.7;
+}
+
+.subtitle-line:last-child {
+    background: linear-gradient(to left, transparent, var(--color-gold));
+}
+
+.hero-title-divider {
+    width: 1px;
+    height: 40px;
+    background: linear-gradient(to bottom, transparent, var(--color-gold), transparent);
+    margin: 0 auto 1.5rem auto;
+    opacity: 0.6;
 }
 
 .hero-title {
     font-family: 'Bebas Neue', sans-serif;
-    font-size: 9rem;
+    font-size: 10rem;
     font-weight: 400;
-    margin-bottom: 2.5rem;
-    letter-spacing: 6px;
-    background: linear-gradient(
-        105deg,
-        #ffffff 0%,
-        #FFB800 22%,
-        #ffffff 38%,
-        #FFD700 54%,
-        #ffffff 70%,
-        #FFB800 100%
-    );
-    background-size: 250% auto;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
-    animation: metalSheen 5s linear infinite, titleGlow 3s infinite alternate cubic-bezier(0.4, 0, 0.2, 1);
+    margin-bottom: 2rem;
+    letter-spacing: 10px;
+    color: #ffffff;
+    line-height: 0.95;
+    animation: titleGlow 4s infinite alternate cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-@keyframes metalSheen {
-    0%   { background-position: 250% center; }
-    100% { background-position: -250% center; }
+.hero-amp {
+    color: var(--color-gold);
+    font-family: 'Playfair Display', serif;
+    font-style: italic;
+    font-size: 0.75em;
+    vertical-align: middle;
+    margin: 0 0.05em;
 }
 
 @keyframes titleGlow {
     from {
-        filter: drop-shadow(0 0 12px rgba(255, 184, 0, 0.55))
-                drop-shadow(0 0 30px rgba(255, 184, 0, 0.2));
+        text-shadow:
+            0 0 40px rgba(255, 184, 0, 0.15),
+            0 2px 4px rgba(0, 0, 0, 0.8);
     }
     to {
-        filter: drop-shadow(0 0 22px rgba(255, 184, 0, 1.0))
-                drop-shadow(0 0 60px rgba(255, 184, 0, 0.55))
-                drop-shadow(0 0 8px rgba(255, 255, 255, 0.5));
+        text-shadow:
+            0 0 60px rgba(255, 184, 0, 0.45),
+            0 0 120px rgba(255, 184, 0, 0.15),
+            0 2px 4px rgba(0, 0, 0, 0.8);
     }
 }
 
@@ -1010,7 +1026,8 @@ a {
     }
 
     .hero-title {
-        font-size: 6rem;
+        font-size: 7rem;
+        letter-spacing: 6px;
     }
 }
 
@@ -1036,7 +1053,8 @@ a {
     }
 
     .hero-title {
-        font-size: 4.5rem;
+        font-size: 5rem;
+        letter-spacing: 4px;
     }
 
     .countdown {

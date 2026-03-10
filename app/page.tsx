@@ -1,5 +1,6 @@
 "use client";
 import React, { useEffect, useState } from "react";
+import Image from "next/image";
 import { FlowGradientHeroSection } from "@/components/ui/flow-gradient-hero-section";
 
 // Data Configuration
@@ -161,7 +162,14 @@ export default function Home() {
               </ul>
             </div>
             <div className="experience-image scroll-reveal delay-2">
-              <div className="image-wrapper" id="drinks-image-wrapper">
+              <div className="image-wrapper" id="drinks-image-wrapper" style={{ position: 'relative' }}>
+                <Image
+                  src="/drinks-img.png"
+                  alt="Premium drinks at Rock & Pour"
+                  fill
+                  style={{ objectFit: 'cover' }}
+                  sizes="(max-width: 768px) 100vw, 50vw"
+                />
                 <div className="glass-card overlay-card">
                   <h4>&quot;The ultimate luxury night out in Cheshire.&quot;</h4>
                 </div>
@@ -213,8 +221,14 @@ export default function Home() {
             <div className="events-poster-col scroll-reveal delay-1">
               <div className="poster-container">
                 <div className="poster-glow"></div>
-                {/* eslint-disable-next-line @next/next/no-img-element */}
-                <img src="/POSTER.png" alt="Rock & Pour Event Poster" className="event-poster" />
+                <Image
+                  src="/POSTER.png"
+                  alt="Rock & Pour Event Poster"
+                  className="event-poster"
+                  width={600}
+                  height={850}
+                  style={{ width: '100%', height: 'auto' }}
+                />
                 <div className="poster-overlay">
                   <span className="poster-tag">FEATURED EVENT</span>
                 </div>

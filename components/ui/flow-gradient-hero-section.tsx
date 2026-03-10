@@ -1,5 +1,5 @@
 "use client";
-import React, { useEffect, useRef, useState } from 'react';
+import React, { useEffect, useRef } from 'react';
 import * as THREE from 'three';
 
 interface LiquidGradientProps {
@@ -265,12 +265,8 @@ export function FlowGradientHeroSection({
 
     return (
         <div
-            style={{ width: '100vw', height: '100vh', position: 'relative', overflow: 'hidden' }}
-        >
-            <div
-                ref={containerRef}
-                style={{ position: 'absolute', inset: 0, zIndex: 0 }}
-            />
-        </div>
+            ref={containerRef}
+            style={{ position: 'absolute', inset: 0, zIndex: 0 }}
+        />
     );
 }

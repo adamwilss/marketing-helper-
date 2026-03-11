@@ -23,9 +23,28 @@ const Typewriter = ({
   const [display, setDisplay] = useState("")
   const state = useRef({ wordIdx: 0, phase: "typing" as "typing" | "deleting", chars: "" })
   const timer = useRef<ReturnType<typeof setTimeout> | undefined>(undefined)
+  const spanRef = useRef<HTMLSpanElement>(null)
+  const visible = useRef(false)
+
+  // Pause animation when scrolled out of view
+  useEffect(() => {
+    const el = spanRef.current
+    if (!el) return
+    const observer = new IntersectionObserver(
+      ([entry]) => { visible.current = entry.isIntersecting },
+      { threshold: 0.1 }
+    )
+    observer.observe(el)
+    return () => observer.disconnect()
+  }, [])
 
   useEffect(() => {
     const tick = () => {
+      if (!visible.current) {
+        timer.current = setTimeout(tick, 200)
+        return
+      }
+
       const s = state.current
       const word = text[s.wordIdx]
 
@@ -56,7 +75,7 @@ const Typewriter = ({
   }, [text, speed, deleteSpeed, waitTime])
 
   return (
-    <span className={className}>
+    <span ref={spanRef} className={className}>
       {display}
       <span className={`typewriter-cursor ${cursorClassName}`}>{cursorChar}</span>
     </span>

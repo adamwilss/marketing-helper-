@@ -181,7 +181,7 @@ export default function Home() {
           <div className="experience-grid">
             <div className="experience-text scroll-reveal">
               <p className="section-overline">The Experience</p>
-              <h2 className="section-title">An Evening of <span className="gold-text"><Typewriter text={["Excess","Decadence","Revelry","Indulgence","Abandon"]} speed={65} deleteSpeed={35} waitTime={2200} cursorChar="_" cursorClassName="ml-0.5 text-[#FFB800]" /></span> and Energy</h2>
+              <h2 className="section-title">An Evening of <span className="gold-text"><Typewriter text={["Excess","Decadence","Revelry","Indulgence","Abandon"]} speed={65} deleteSpeed={35} waitTime={2200} /></span> and Energy</h2>
               <div className="gold-rule-left" />
               <p className="section-desc">
                 Rock &amp; Pour is not your average night out. A curated, high-energy evening at the prestigious Bowdon Rooms — one of Cheshire&apos;s most celebrated venues.

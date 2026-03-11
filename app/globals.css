@@ -59,6 +59,17 @@ a {
     text-align: center;
 }
 
+.typewriter-cursor {
+    color: var(--color-gold);
+    animation: cursorBlink 0.8s step-end infinite;
+    margin-left: 1px;
+}
+
+@keyframes cursorBlink {
+    0%, 100% { opacity: 1; }
+    50%       { opacity: 0; }
+}
+
 .section-title {
     font-size: 3rem;
     margin-bottom: 1rem;

@@ -2,26 +2,8 @@
 import React, { useEffect, useState } from "react";
 import Image from "next/image";
 import { SmokeBackground } from "@/components/ui/spooky-smoke-animation";
-import { SocialLinks } from "@/components/ui/social-links";
 import { Typewriter } from "@/components/ui/typewriter";
 
-const footerSocials = [
-  {
-    name: "Instagram",
-    href: "#",
-    image: "https://link-hover-lndev.vercel.app/instagram.png",
-  },
-  {
-    name: "Facebook",
-    href: "#",
-    image: "https://link-hover-lndev.vercel.app/facebook.png",
-  },
-  {
-    name: "TikTok",
-    href: "#",
-    image: "https://link-hover-lndev.vercel.app/tiktok.png",
-  },
-];
 
 // Data Configuration
 const eventsData = [
@@ -303,10 +285,6 @@ export default function Home() {
               <p>The Bowdon Rooms<br />The Firs, Bowdon, Altrincham WA14 2TQ</p>
               <p>Box Office: <a href="tel:01619268992" className="gold-text hover-light">0161 926 8992</a></p>
               <a href="https://www.thebowdonrooms.co.uk" target="_blank" rel="noreferrer" className="venue-link">Visit The Bowdon Rooms Website &rarr;</a>
-            </div>
-            <div className="footer-social">
-              <h4>Follow Us</h4>
-              <SocialLinks socials={footerSocials} className="justify-start gap-0 -ml-5" />
             </div>
           </div>
           <div className="footer-bottom">

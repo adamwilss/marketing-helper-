@@ -110,23 +110,16 @@ export default function Home() {
         <div className="hero-content">
           <h3 className="hero-subtitle fade-up">
             <span className="subtitle-line" />
-            THE BOWDON ROOMS PRESENTS
+            AT THE BOWDON ROOMS
             <span className="subtitle-line" />
           </h3>
-          <div className="hero-title-divider fade-up" />
           <h1 className="hero-title fade-up delay-1">ROCK <span className="hero-amp">&amp;</span> POUR</h1>
 
-          <div className="hero-highlights fade-up delay-2">
-            <div className="highlight-item">ONE TICKET. ALL INCLUSIVE.</div>
-            <div className="highlight-item highlight-price">£55 per ticket</div>
-            <div className="highlight-item">LIVE BAND | ALL INCLUSIVE DRINKS</div>
-          </div>
-
-          <div className="hero-date fade-up delay-3">
+          <div className="hero-date fade-up delay-2">
             <span>{targetEvent.month.toUpperCase()} {targetEvent.day}TH • {targetEvent.year}</span> • <span>{targetEvent.time}</span>
           </div>
 
-          <div className="countdown-container fade-up delay-4">
+          <div className="countdown-container fade-up delay-3">
             <p className="countdown-label">TICKETS SELLING FAST</p>
             <div className="countdown">
               <div className="time-box">
@@ -148,8 +141,8 @@ export default function Home() {
             </div>
           </div>
 
-          <div className="hero-actions fade-up delay-5">
-            <a href="https://www.skiddle.com" target="_blank" rel="noreferrer" className="btn btn-gold btn-large">GET YOUR TICKETS</a>
+          <div className="hero-actions fade-up delay-4">
+            <a href="https://www.skiddle.com/whats-on/Warrington/The-Bowdon-Rooms/Rock--Pour/42147525/" target="_blank" rel="noreferrer" className="btn btn-gold btn-large">GET YOUR TICKETS</a>
           </div>
         </div>
       </header>
@@ -198,80 +191,49 @@ export default function Home() {
           <div className="drinks-grid">
             <div className="drink-card scroll-reveal delay-1">
               <div className="drink-icon">🍺</div>
-              <h3>Crafted Beers</h3>
-              <p>Selection of premium draught and bottled beers, poured to perfection.</p>
+              <h3>Premium Beers</h3>
+              <p>Moretti, Cruz Campo & Murphy&apos;s on draught — poured properly, all night long.</p>
             </div>
             <div className="drink-card scroll-reveal delay-2">
               <div className="drink-icon">🍷</div>
               <h3>Fine Wines</h3>
-              <p>Hand-picked red, white, and rosé selections from acclaimed vineyards.</p>
+              <p>Sauvignon Blanc, quality reds & rosés — proper wines, not house plonk.</p>
             </div>
             <div className="drink-card scroll-reveal delay-3">
               <div className="drink-icon">🥂</div>
-              <h3>Champagnes</h3>
-              <p>Exquisite sparkling options to celebrate the evening in true luxury.</p>
+              <h3>Prosecco</h3>
+              <p>Premium prosecco flowing freely — because every great night deserves a toast.</p>
             </div>
             <div className="drink-card scroll-reveal delay-4">
-              <div className="drink-icon">🍸</div>
+              <div className="drink-icon">🥃</div>
               <h3>Premium Spirits</h3>
-              <p>Top-shelf spirits and mixers, accompanied by elegant non-alcoholic alternatives.</p>
+              <p>Branded whiskeys, vodkas, brandies & gins — the full top-shelf experience.</p>
             </div>
           </div>
         </div>
       </section>
 
-      {/* Upcoming Events Section */}
-      <section className="events section" id="events">
-        <div className="container">
-          <div className="section-header text-center scroll-reveal">
-            <h2 className="section-title">Upcoming <span className="gold-text">Nights</span></h2>
-            <p className="section-subtitle">Secure your place at our next exclusive events. Capacity is strictly limited.</p>
-          </div>
-
-          <div className="events-layout">
-            <div className="events-poster-col scroll-reveal delay-1">
-              <div className="poster-container">
-                <div className="poster-glow"></div>
-                <Image
-                  src="/POSTER.png"
-                  alt="Rock & Pour Event Poster"
-                  className="event-poster"
-                  width={600}
-                  height={850}
-                  style={{ width: '100%', height: 'auto' }}
-                />
-                <div className="poster-overlay">
-                  <span className="poster-tag">FEATURED EVENT</span>
-                </div>
-              </div>
+      {/* Poster Section */}
+      <section className="poster-section section" id="events">
+        <div className="container text-center">
+          <div className="poster-center scroll-reveal">
+            <div className="poster-container" style={{ maxWidth: 520, margin: '0 auto' }}>
+              <div className="poster-glow"></div>
+              <Image
+                src="/POSTER.png"
+                alt="Rock & Pour Event Poster"
+                className="event-poster"
+                width={520}
+                height={737}
+                style={{ width: '100%', height: 'auto' }}
+              />
             </div>
-            <div className="events-list-col">
-              <div className="events-list">
-                {eventsData.map((event, index) => (
-                  <div key={event.id} className="event-row scroll-reveal" style={{ transitionDelay: `${(index + 1) * 0.2}s` }}>
-                    <div className="event-date-col">
-                      <span className="event-month">{event.month}</span>
-                      <span className="event-day">{event.day}</span>
-                      <span className="event-time">{event.time}</span>
-                    </div>
-                    <div className="event-info-col">
-                      <h3>{event.bandName}</h3>
-                      <p>{event.description}</p>
-                    </div>
-                    <div className="event-action-col">
-                      {event.soldOut ? (
-                        <button className="btn btn-outline-gold" disabled style={{ opacity: 0.5, cursor: 'not-allowed' }}>SOLD OUT</button>
-                      ) : (
-                        <a href={event.ticketLink} target="_blank" rel="noreferrer" className="btn btn-gold">Get Tickets</a>
-                      )}
-                    </div>
-                  </div>
-                ))}
-              </div>
+            <div className="poster-cta scroll-reveal delay-2">
+              <a href="https://www.skiddle.com/whats-on/Warrington/The-Bowdon-Rooms/Rock--Pour/42147525/" target="_blank" rel="noreferrer" className="btn btn-gold btn-large">GET YOUR TICKETS</a>
             </div>
           </div>
         </div>
-      </section >
+      </section>
 
       {/* Footer */}
       < footer className="footer" >

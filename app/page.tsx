@@ -113,7 +113,9 @@ export default function Home() {
             AT THE BOWDON ROOMS
             <span className="subtitle-line" />
           </h3>
-          <h1 className="hero-title fade-up delay-1">ROCK <span className="hero-amp">&amp;</span> POUR</h1>
+          <div className="hero-title-img fade-up delay-1">
+            <img src="/title-logo.png" alt="ROCK & POUR" className="title-logo-img" />
+          </div>
 
           <div className="hero-date fade-up delay-2">
             <span>{targetEvent.month.toUpperCase()} {targetEvent.day}TH • {targetEvent.year}</span> • <span>{targetEvent.time}</span>

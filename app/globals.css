@@ -427,6 +427,21 @@ a {
     text-shadow: 0 0 30px rgba(255, 184, 0, 0.6);
 }
 
+.hero-title-img {
+    margin-bottom: 2.5rem;
+    animation: titleGlow 4s infinite alternate cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.title-logo-img {
+    width: 600px;
+    max-width: 90vw;
+    height: auto;
+    mix-blend-mode: multiply;
+    filter: drop-shadow(0 0 40px rgba(255, 184, 0, 0.4));
+    display: block;
+    margin: 0 auto;
+}
+
 @keyframes titleGlow {
     from {
         text-shadow:
@@ -1047,6 +1062,10 @@ a {
     .hero-title {
         font-size: 8rem;
         letter-spacing: 6px;
+    }
+
+    .title-logo-img {
+        width: 480px;
     }
 }
 

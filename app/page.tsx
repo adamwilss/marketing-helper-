@@ -156,18 +156,29 @@ export default function Home() {
         <div className="container">
           <div className="experience-grid">
             <div className="experience-text scroll-reveal">
+              <p className="section-overline">The Experience</p>
               <h2 className="section-title">An Evening of <span className="gold-text">Elegance</span> and Energy</h2>
+              <div className="gold-rule-left" />
               <p className="section-desc">
-                Rock &amp; Pour is not your average night out. It&apos;s a curated, high-energy experience hosted at the prestigious Bowdon Rooms in Cheshire.
+                Rock &amp; Pour is not your average night out. A curated, high-energy evening at the prestigious Bowdon Rooms — one of Cheshire&apos;s most celebrated venues.
               </p>
               <p className="section-desc">
-                For a single entry fee of £55, leave your wallet behind and fully immerse yourself in the night. Enjoy unlimited, completely inclusive access to our premium bar selections while exceptional live bands bring the venue to life. We don&apos;t compromise on quality—expect exactly the premium poured pints, fine wines, and crafted spirits typically served at our luxury venue.
+                One £55 ticket covers everything. Leave your wallet at home and immerse yourself fully — unlimited premium drinks poured to the same standard as any night at the Bowdon Rooms, and world-class live bands bringing the room to life.
               </p>
-              <ul className="feature-list">
-                <li><span className="icon">✦</span> Exclusive atmosphere with a 300-person capacity</li>
-                <li><span className="icon">✦</span> World-class live entertainment</li>
-                <li><span className="icon">✦</span> Zero compromise on drink quality</li>
-              </ul>
+              <div className="stats-strip">
+                <div className="stat-item">
+                  <div className="stat-value">300</div>
+                  <div className="stat-label">Capacity</div>
+                </div>
+                <div className="stat-item">
+                  <div className="stat-value">£55</div>
+                  <div className="stat-label">All Inclusive</div>
+                </div>
+                <div className="stat-item">
+                  <div className="stat-value">Live</div>
+                  <div className="stat-label">Music All Night</div>
+                </div>
+              </div>
             </div>
             <div className="experience-image scroll-reveal delay-2">
               <div className="image-wrapper" id="drinks-image-wrapper" style={{ position: 'relative' }}>
@@ -179,6 +190,7 @@ export default function Home() {
                   sizes="(max-width: 768px) 100vw, 50vw"
                 />
                 <div className="glass-card overlay-card">
+                  <div className="glass-card-rule" />
                   <h4>&quot;The ultimate luxury night out in Cheshire.&quot;</h4>
                 </div>
               </div>
@@ -190,30 +202,37 @@ export default function Home() {
       {/* Premium Drinks Offerings */}
       <section className="drinks section dark-bg" id="drinks">
         <div className="container text-center scroll-reveal">
+          <p className="section-overline">All Included</p>
           <h2 className="section-title">The <span className="gold-text">Premium</span> Selection</h2>
-          <p className="section-subtitle">A curated all-inclusive menu featuring the finest selections.</p>
+          <div className="gold-divider"><span className="gold-diamond" /></div>
+          <p className="section-subtitle">Every drop included in your £55 ticket. No bar tab. No compromise.</p>
           <div className="drinks-grid">
             <div className="drink-card scroll-reveal delay-1">
+              <div className="drink-card-accent" />
               <div className="drink-icon">🍺</div>
-              <h3>Premium Beers</h3>
-              <p>Moretti, Cruz Campo & Murphy&apos;s on draught — poured properly, all night long.</p>
+              <h3>Premium Draught</h3>
+              <p>Moretti, Cruz Campo &amp; Murphy&apos;s — poured properly, all night long.</p>
             </div>
             <div className="drink-card scroll-reveal delay-2">
+              <div className="drink-card-accent" />
               <div className="drink-icon">🍷</div>
               <h3>Fine Wines</h3>
-              <p>Sauvignon Blanc, quality reds & rosés — proper wines, not house plonk.</p>
+              <p>Sauvignon Blanc, quality reds &amp; rosés — proper wines served with care.</p>
             </div>
             <div className="drink-card scroll-reveal delay-3">
+              <div className="drink-card-accent" />
               <div className="drink-icon">🥂</div>
               <h3>Prosecco</h3>
-              <p>Premium prosecco flowing freely — because every great night deserves a toast.</p>
+              <p>Premium prosecco flowing all evening — because every great night deserves a toast.</p>
             </div>
             <div className="drink-card scroll-reveal delay-4">
+              <div className="drink-card-accent" />
               <div className="drink-icon">🥃</div>
               <h3>Premium Spirits</h3>
-              <p>Branded whiskeys, vodkas, brandies & gins — the full top-shelf experience.</p>
+              <p>Branded whiskeys, vodkas, brandies &amp; gins — the full top-shelf experience.</p>
             </div>
           </div>
+          <p className="drinks-inclusive-note">All of the above — unlimited — included in your single £55 entry ticket.</p>
         </div>
       </section>
 

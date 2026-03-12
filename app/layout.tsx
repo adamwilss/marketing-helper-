@@ -3,9 +3,9 @@ import "./globals.css";
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://www.rockandpour.co.uk"),
-  title: "Rock & Pour | Live Music & Premium Drinks Night at The Bowdon Rooms",
+  title: "Rock & Pour | Live Rock Music & Premium Drinks Night at The Bowdon Rooms",
   description:
-    "Rock & Pour is a night of live rock music and free premium drinks at The Bowdon Rooms. Enjoy incredible bands and a unique drinks experience.",
+    "Rock & Pour is a night of live rock music and free premium drinks at The Bowdon Rooms. Enjoy incredible bands and an unforgettable music and drinks experience.",
   alternates: {
     canonical: "/",
   },
@@ -14,9 +14,9 @@ export const metadata: Metadata = {
     follow: true,
   },
   openGraph: {
-    title: "Rock & Pour | Live Music & Premium Drinks Night at The Bowdon Rooms",
+    title: "Rock & Pour | Live Rock Music & Premium Drinks Night at The Bowdon Rooms",
     description:
-      "Rock & Pour is a night of live rock music and free premium drinks at The Bowdon Rooms. Enjoy incredible bands and a unique drinks experience.",
+      "Rock & Pour is a night of live rock music and free premium drinks at The Bowdon Rooms. Enjoy incredible bands and an unforgettable music and drinks experience.",
     url: "https://www.rockandpour.co.uk",
     siteName: "Rock & Pour",
     type: "website",
@@ -31,18 +31,18 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Rock & Pour | Live Music & Premium Drinks Night at The Bowdon Rooms",
+    title: "Rock & Pour | Live Rock Music & Premium Drinks Night at The Bowdon Rooms",
     description:
-      "Rock & Pour is a night of live rock music and free premium drinks at The Bowdon Rooms. Enjoy incredible bands and a unique drinks experience.",
+      "Rock & Pour is a night of live rock music and free premium drinks at The Bowdon Rooms. Enjoy incredible bands and an unforgettable music and drinks experience.",
     images: ["/POSTER.png"],
   },
 };
 
 const jsonLd = {
   "@context": "https://schema.org",
-  "@type": "Event",
-  "name": "Rock & Pour — Live Band Night at The Bowdon Rooms",
-  "description": "One ticket, all inclusive. Live rock band and unlimited drinks at The Bowdon Rooms, Altrincham. £55 per ticket.",
+  "@type": "MusicEvent",
+  "name": "Rock & Pour",
+  "description": "A night of live rock music with free premium drinks included throughout the evening at The Bowdon Rooms, Altrincham.",
   "startDate": "2026-04-10T19:30:00",
   "eventStatus": "https://schema.org/EventScheduled",
   "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
@@ -64,6 +64,10 @@ const jsonLd = {
     "priceCurrency": "GBP",
     "availability": "https://schema.org/InStock",
     "validFrom": "2026-01-01"
+  },
+  "performer": {
+    "@type": "PerformingGroup",
+    "name": "Live Rock Bands"
   },
   "organizer": {
     "@type": "Organization",

@@ -113,6 +113,7 @@ export default function Home() {
         <div className="hero-haze" />
         <div id="hero-particles" className="hero-particles"></div>
         <div className="hero-content">
+          <h1 className="sr-only">Rock &amp; Pour — Live Rock Music &amp; Premium Drinks Night at The Bowdon Rooms</h1>
           <h3 className="hero-subtitle fade-up">
             <span className="subtitle-line" />
             AT THE BOWDON ROOMS

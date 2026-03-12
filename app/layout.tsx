@@ -51,8 +51,9 @@ const jsonLd = {
     "name": "The Bowdon Rooms",
     "address": {
       "@type": "PostalAddress",
-      "addressLocality": "Altrincham",
-      "addressRegion": "Greater Manchester",
+      "streetAddress": "The Firs",
+      "addressLocality": "Bowdon, Altrincham",
+      "postalCode": "WA14 2TQ",
       "addressCountry": "GB"
     }
   },
@@ -80,6 +81,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
+        <meta name="google-site-verification" content="qgMgazHhO3cFsLm_X6377LjIGZBp45KAXqD6pE_VGvM" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
         <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@300;400;600;700&family=Playfair+Display:ital,wght@0,400;0,600;0,700;0,900;1,400&display=swap" rel="stylesheet" />

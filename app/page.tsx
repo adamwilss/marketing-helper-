@@ -15,7 +15,7 @@ const eventsData = [
     id: 2, date: "2026-05-15T19:30:00", displayDate: "May 15th", month: "May", day: "15", year: "2026", time: "7:30 PM", bandName: "Velvet Thunder", description: "Bringing the best of 80s and 90s rock stadium hits straight to The Bowdon Rooms.", ticketLink: "https://www.skiddle.com", soldOut: false
   },
   {
-    id: 3, date: "2026-06-20T19:30:00", displayDate: "June 20th", month: "June", day: "20", year: "2026", time: "7:30 PM", bandName: "Electric Rebels", description: "A tribute to the legends of indie rock. Expect a night of pure nostalgia and world-class drinks.", ticketLink: "https://www.skiddle.com", soldOut: true
+    id: 3, date: "2026-06-20T19:30:00", displayDate: "June 20th", month: "June", day: "20", year: "2026", time: "7:30 PM", bandName: "Electric Rebels", description: "A tribute to the legends of indie rock. Expect a night of pure nostalgia and great drinks all included.", ticketLink: "https://www.skiddle.com", soldOut: true
   }
 ];
 
@@ -166,13 +166,13 @@ export default function Home() {
           <div className="experience-grid">
             <div className="experience-text scroll-reveal">
               <p className="section-overline">The Experience</p>
-              <h2 className="section-title">An Evening of Energy and <span className="gold-text"><Typewriter text={["Excess","Decadence","Revelry","Indulgence","Abandon"]} speed={160} deleteSpeed={90} waitTime={5000} /></span></h2>
+              <h2 className="section-title">An Evening of <span className="gold-text"><Typewriter text={["Music","Friends","Anthems","Energy","Drinks","Dance","Revelry","Nostalgia","Celebration"]} speed={160} deleteSpeed={90} waitTime={4000} /></span></h2>
               <div className="gold-rule-left" />
               <p className="section-desc">
-                Rock &amp; Pour is not your average night out. A curated, high-energy evening at the prestigious Bowdon Rooms — one of Cheshire&apos;s most celebrated venues.
+                Rock &amp; Pour is a high-energy live music night where your £55 ticket includes all your drinks. Enjoy outstanding bands playing indie rock, Britpop and 90s anthems in an immersive party atmosphere.
               </p>
               <p className="section-desc">
-                One £55 ticket covers everything. Leave your wallet at home and immerse yourself fully — unlimited premium drinks poured to the same standard as any night at the Bowdon Rooms, and world-class live bands bringing the room to life.
+                Sing, dance and drink with friends for an unforgettable night.
               </p>
               <div className="stats-strip">
                 <div className="stat-item">

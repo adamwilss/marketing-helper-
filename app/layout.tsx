@@ -3,7 +3,7 @@ import "./globals.css";
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://www.rockandpour.co.uk"),
-  title: "Rock & Pour | Premium Mobile Cocktail Bar for Weddings, Parties and Events",
+  title: "Rock & Pour | Live Music & Premium Drinks Night at The Bowdon Rooms",
   description:
     "Rock & Pour is a night of live rock music and free premium drinks at The Bowdon Rooms. Enjoy incredible bands and a unique drinks experience.",
   alternates: {
@@ -14,7 +14,7 @@ export const metadata: Metadata = {
     follow: true,
   },
   openGraph: {
-    title: "Rock & Pour | Premium Mobile Cocktail Bar",
+    title: "Rock & Pour | Live Music & Premium Drinks Night at The Bowdon Rooms",
     description:
       "Rock & Pour is a night of live rock music and free premium drinks at The Bowdon Rooms. Enjoy incredible bands and a unique drinks experience.",
     url: "https://www.rockandpour.co.uk",
@@ -31,7 +31,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Rock & Pour | Premium Mobile Cocktail Bar",
+    title: "Rock & Pour | Live Music & Premium Drinks Night at The Bowdon Rooms",
     description:
       "Rock & Pour is a night of live rock music and free premium drinks at The Bowdon Rooms. Enjoy incredible bands and a unique drinks experience.",
     images: ["/POSTER.png"],

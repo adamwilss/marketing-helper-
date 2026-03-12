@@ -9,7 +9,7 @@ import { Beer, Wine, Sparkles, Flame } from "lucide-react";
 // Data Configuration
 const eventsData = [
   {
-    id: 1, date: "2026-04-10T19:30:00", displayDate: "April 10th", month: "April", day: "10", year: "2026", time: "7:30 PM", bandName: "The Midnight Howl", description: "An explosive night of classic rock covers and high-energy anthems from returning favorites.", ticketLink: "https://www.skiddle.com", soldOut: false
+    id: 1, date: "2026-04-10T19:30:00", displayDate: "April 10th", month: "April", day: "10", year: "2026", time: "7:30 PM", bandName: "Steven and the Holy Heathens", description: "Playing the best of Oasis, Arctic Monkeys, Blur, Pulp, Stone Roses, The Strokes, The Smiths, Green Day and more.", ticketLink: "https://www.skiddle.com/whats-on/Warrington/The-Bowdon-Rooms/Rock--Pour/42147525/", soldOut: false
   },
   {
     id: 2, date: "2026-05-15T19:30:00", displayDate: "May 15th", month: "May", day: "15", year: "2026", time: "7:30 PM", bandName: "Velvet Thunder", description: "Bringing the best of 80s and 90s rock stadium hits straight to The Bowdon Rooms.", ticketLink: "https://www.skiddle.com", soldOut: false
@@ -248,21 +248,33 @@ export default function Home() {
       {/* Poster Section */}
       <section className="poster-section section" id="events">
         <div className="container text-center">
-          <div className="poster-center scroll-reveal">
-            <div className="poster-container" style={{ maxWidth: 520, margin: '0 auto' }}>
+          <div className="poster-pair scroll-reveal">
+            <div className="poster-container">
               <div className="poster-glow"></div>
               <Image
                 src="/POSTER.png"
-                alt="Rock & Pour Event Poster"
+                alt="Rock & Pour — April 10th 2026 at The Bowdon Rooms"
                 className="event-poster"
                 width={520}
                 height={737}
                 style={{ width: '100%', height: 'auto' }}
               />
             </div>
-            <div className="poster-cta scroll-reveal delay-2">
-              <a href="https://www.skiddle.com/whats-on/Warrington/The-Bowdon-Rooms/Rock--Pour/42147525/" target="_blank" rel="noreferrer" className="btn btn-gold btn-large">GET YOUR TICKETS</a>
+            <div className="poster-container">
+              <div className="poster-glow"></div>
+              <Image
+                src="/band-poster.png"
+                alt="Steven and the Holy Heathens — live at Rock & Pour"
+                className="event-poster"
+                width={520}
+                height={737}
+                style={{ width: '100%', height: 'auto' }}
+              />
             </div>
+          </div>
+          <div className="poster-cta scroll-reveal delay-2">
+            <a href="https://www.skiddle.com/whats-on/Warrington/The-Bowdon-Rooms/Rock--Pour/42147525/" target="_blank" rel="noreferrer" className="btn btn-gold btn-large">GET YOUR TICKETS</a>
+            <p className="discount-note">Use code <span className="gold-text">ROCKS10</span> at checkout for 10% off</p>
           </div>
         </div>
       </section>

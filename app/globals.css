@@ -1182,8 +1182,37 @@ a {
     background-color: var(--color-bg);
 }
 
+.poster-pair {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.poster-pair .poster-container {
+    max-width: 100%;
+}
+
 .poster-cta {
     margin-top: 2.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+.discount-note {
+    font-size: 0.9rem;
+    letter-spacing: 1px;
+    color: var(--color-text-muted);
+}
+
+@media (max-width: 640px) {
+    .poster-pair {
+        grid-template-columns: 1fr;
+        max-width: 400px;
+    }
 }
 
 /* Footer */

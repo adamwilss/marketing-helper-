@@ -136,22 +136,18 @@ export default function Home() {
             <p className="countdown-label">TICKETS SELLING FAST</p>
             <div className="countdown">
               <div className="time-box">
-                <GlowingEffect spread={30} glow={true} disabled={false} proximity={50} inactiveZone={0.01} borderWidth={1} />
                 <span className="time-val">{timeLeft.days}</span>
                 <span className="time-text">Days</span>
               </div>
               <div className="time-box">
-                <GlowingEffect spread={30} glow={true} disabled={false} proximity={50} inactiveZone={0.01} borderWidth={1} />
                 <span className="time-val">{timeLeft.hours}</span>
                 <span className="time-text">Hours</span>
               </div>
               <div className="time-box">
-                <GlowingEffect spread={30} glow={true} disabled={false} proximity={50} inactiveZone={0.01} borderWidth={1} />
                 <span className="time-val">{timeLeft.minutes}</span>
                 <span className="time-text">Mins</span>
               </div>
               <div className="time-box">
-                <GlowingEffect spread={30} glow={true} disabled={false} proximity={50} inactiveZone={0.01} borderWidth={1} />
                 <span className="time-val">{timeLeft.seconds}</span>
                 <span className="time-text">Secs</span>
               </div>

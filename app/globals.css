@@ -1043,9 +1043,11 @@ a {
 .poster-container {
     position: relative;
     border-radius: 12px;
+    overflow: hidden;
     transition: transform 0.5s cubic-bezier(0.25, 0.8, 0.25, 1), box-shadow 0.5s ease;
     transform-style: preserve-3d;
     cursor: pointer;
+    border: 1px solid rgba(255, 184, 0, 0.35);
     box-shadow: 0 15px 35px rgba(0, 0, 0, 0.5), 0 0 20px rgba(255, 184, 0, 0.15);
 }
 
@@ -1090,11 +1092,9 @@ a {
 .event-poster {
     width: 100%;
     height: auto;
-    border-radius: 12px;
     display: block;
     position: relative;
     z-index: 1;
-    border: 1px solid rgba(255, 184, 0, 0.35);
 }
 
 .poster-overlay {

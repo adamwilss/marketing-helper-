@@ -184,18 +184,21 @@ export default function Home() {
               <p className="section-desc">
                 Sing, dance and drink with friends for an unforgettable night.
               </p>
-              <div className="stats-strip">
-                <div className="stat-item">
-                  <div className="stat-value">300</div>
-                  <div className="stat-label">Capacity</div>
-                </div>
-                <div className="stat-item">
-                  <div className="stat-value">£55</div>
-                  <div className="stat-label">All Inclusive</div>
-                </div>
-                <div className="stat-item">
-                  <div className="stat-value">Live</div>
-                  <div className="stat-label">Music All Night</div>
+              <div style={{ position: 'relative' }}>
+                <GlowingEffect spread={40} glow={true} disabled={false} proximity={64} inactiveZone={0.01} borderWidth={2} />
+                <div className="stats-strip">
+                  <div className="stat-item">
+                    <div className="stat-value">300</div>
+                    <div className="stat-label">Capacity</div>
+                  </div>
+                  <div className="stat-item">
+                    <div className="stat-value">£55</div>
+                    <div className="stat-label">All Inclusive</div>
+                  </div>
+                  <div className="stat-item">
+                    <div className="stat-value">Live</div>
+                    <div className="stat-label">Music All Night</div>
+                  </div>
                 </div>
               </div>
             </div>

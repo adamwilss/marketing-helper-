@@ -24,6 +24,7 @@ export default function Home() {
   const [scrolled, setScrolled] = useState(false);
   const [menuActive, setMenuActive] = useState(false);
   const [timeLeft, setTimeLeft] = useState({ days: "00", hours: "00", minutes: "00", seconds: "00" });
+  const [inspectedPoster, setInspectedPoster] = useState<string | null>(null);
 
   const targetEvent = eventsData.find(e => !e.soldOut && new Date(e.date).getTime() > new Date().getTime()) || eventsData[0];
 
@@ -59,6 +60,12 @@ export default function Home() {
       clearInterval(interval);
     };
   }, [targetEvent.date]);
+
+  useEffect(() => {
+    const handleKey = (e: KeyboardEvent) => { if (e.key === 'Escape') setInspectedPoster(null); };
+    window.addEventListener('keydown', handleKey);
+    return () => window.removeEventListener('keydown', handleKey);
+  }, []);
 
   useEffect(() => {
     const pc = document.getElementById('hero-particles');
@@ -262,27 +269,31 @@ export default function Home() {
       <section className="poster-section section" id="events">
         <div className="container text-center">
           <div className="poster-pair scroll-reveal">
-            <div className="poster-container">
-              <div className="poster-glow"></div>
-              <Image
-                src="/POSTER.png"
-                alt="Rock & Pour — April 10th 2026 at The Bowdon Rooms"
-                className="event-poster"
-                width={520}
-                height={737}
-                style={{ width: '100%', height: 'auto' }}
-              />
+            <div className="poster-wrapper">
+              <GlowingEffect spread={60} glow={true} disabled={false} proximity={80} inactiveZone={0.01} borderWidth={2} />
+              <div className="poster-container" onClick={() => setInspectedPoster('/POSTER.png')}>
+                <Image
+                  src="/POSTER.png"
+                  alt="Rock & Pour — April 10th 2026 at The Bowdon Rooms"
+                  className="event-poster"
+                  width={520}
+                  height={737}
+                  style={{ width: '100%', height: '100%' }}
+                />
+              </div>
             </div>
-            <div className="poster-container">
-              <div className="poster-glow"></div>
-              <Image
-                src="/band-poster.png"
-                alt="Steven and the Holy Heathens — live at Rock & Pour"
-                className="event-poster"
-                width={520}
-                height={737}
-                style={{ width: '100%', height: 'auto' }}
-              />
+            <div className="poster-wrapper">
+              <GlowingEffect spread={60} glow={true} disabled={false} proximity={80} inactiveZone={0.01} borderWidth={2} />
+              <div className="poster-container" onClick={() => setInspectedPoster('/band-poster.png')}>
+                <Image
+                  src="/band-poster.png"
+                  alt="Steven and the Holy Heathens — live at Rock & Pour"
+                  className="event-poster"
+                  width={520}
+                  height={737}
+                  style={{ width: '100%', height: '100%' }}
+                />
+              </div>
             </div>
           </div>
           <div className="poster-cta scroll-reveal delay-2">
@@ -318,6 +329,15 @@ export default function Home() {
           </div>
         </div>
       </footer >
+
+      {inspectedPoster && (
+        <div className="lightbox-overlay" onClick={() => setInspectedPoster(null)}>
+          <div className="lightbox-content" onClick={e => e.stopPropagation()}>
+            <button className="lightbox-close" onClick={() => setInspectedPoster(null)}>✕</button>
+            <img src={inspectedPoster} alt="Poster" className="lightbox-img" />
+          </div>
+        </div>
+      )}
     </>
   );
 }

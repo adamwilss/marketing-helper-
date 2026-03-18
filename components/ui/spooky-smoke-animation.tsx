@@ -63,7 +63,7 @@ void main(){gl_Position=position;}`;
   }
 
   updateScale() {
-    const dpr = Math.max(1, window.devicePixelRatio);
+    const dpr = 1; // smoke doesn't benefit from retina resolution
     const width = this.canvas.clientWidth || window.innerWidth;
     const height = this.canvas.clientHeight || window.innerHeight;
     this.canvas.width = width * dpr;
@@ -166,15 +166,29 @@ export const SmokeBackground: React.FC<SmokeBackgroundProps> = ({
     window.addEventListener('resize', handleResize);
 
     let animationFrameId: number;
+    let isVisible = true;
+    let lastFrameTime = 0;
+    const FRAME_MIN_MS = 1000 / 30; // cap at 30fps
+
     const loop = (now: number) => {
-      renderer.render(now);
       animationFrameId = requestAnimationFrame(loop);
+      if (!isVisible || now - lastFrameTime < FRAME_MIN_MS) return;
+      lastFrameTime = now;
+      renderer.render(now);
     };
-    loop(0);
+    animationFrameId = requestAnimationFrame(loop);
+
+    // Pause rendering when canvas is off-screen
+    const observer = new IntersectionObserver(
+      ([entry]) => { isVisible = entry.isIntersecting; },
+      { threshold: 0 }
+    );
+    observer.observe(canvas);
 
     return () => {
       window.removeEventListener('resize', handleResize);
       cancelAnimationFrame(animationFrameId);
+      observer.disconnect();
       renderer.reset();
     };
   }, []);

@@ -20,46 +20,71 @@ const eventsData = [
   }
 ];
 
-export default function Home() {
-  const [scrolled, setScrolled] = useState(false);
-  const [menuActive, setMenuActive] = useState(false);
+function Countdown({ targetDate }: { targetDate: string }) {
   const [timeLeft, setTimeLeft] = useState({ days: "00", hours: "00", minutes: "00", seconds: "00" });
-  const [inspectedPoster, setInspectedPoster] = useState<string | null>(null);
-
-  const targetEvent = eventsData.find(e => !e.soldOut && new Date(e.date).getTime() > new Date().getTime()) || eventsData[0];
-
   useEffect(() => {
-    const handleScroll = () => {
-      setScrolled(window.scrollY > 50);
-      const reveals = document.querySelectorAll('.scroll-reveal');
-      reveals.forEach(reveal => {
-        const revealTop = reveal.getBoundingClientRect().top;
-        if (revealTop < window.innerHeight - 100) reveal.classList.add('active');
-      });
-    };
-    window.addEventListener('scroll', handleScroll);
-    handleScroll();
-
-    const countDownDate = new Date(targetEvent.date).getTime();
-    const interval = setInterval(() => {
+    const countDownDate = new Date(targetDate).getTime();
+    const tick = () => {
       const distance = countDownDate - new Date().getTime();
-      if (distance < 0) {
-        clearInterval(interval);
-        return;
-      }
+      if (distance < 0) { clearInterval(interval); return; }
       setTimeLeft({
         days: Math.floor(distance / (1000 * 60 * 60 * 24)).toString().padStart(2, '0'),
         hours: Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)).toString().padStart(2, '0'),
         minutes: Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60)).toString().padStart(2, '0'),
         seconds: Math.floor((distance % (1000 * 60)) / 1000).toString().padStart(2, '0'),
       });
-    }, 1000);
-
-    return () => {
-      window.removeEventListener('scroll', handleScroll);
-      clearInterval(interval);
     };
-  }, [targetEvent.date]);
+    const interval = setInterval(tick, 1000);
+    tick();
+    return () => clearInterval(interval);
+  }, [targetDate]);
+
+  return (
+    <div className="countdown">
+      <div className="time-box"><span className="time-val">{timeLeft.days}</span><span className="time-text">Days</span></div>
+      <div className="time-box"><span className="time-val">{timeLeft.hours}</span><span className="time-text">Hours</span></div>
+      <div className="time-box"><span className="time-val">{timeLeft.minutes}</span><span className="time-text">Mins</span></div>
+      <div className="time-box"><span className="time-val">{timeLeft.seconds}</span><span className="time-text">Secs</span></div>
+    </div>
+  );
+}
+
+export default function Home() {
+  const [scrolled, setScrolled] = useState(false);
+  const [menuActive, setMenuActive] = useState(false);
+  const [inspectedPoster, setInspectedPoster] = useState<string | null>(null);
+
+  const targetEvent = eventsData.find(e => !e.soldOut && new Date(e.date).getTime() > new Date().getTime()) || eventsData[0];
+
+  useEffect(() => {
+    let ticking = false;
+    const handleScroll = () => {
+      if (!ticking) {
+        requestAnimationFrame(() => {
+          setScrolled(window.scrollY > 50);
+          ticking = false;
+        });
+        ticking = true;
+      }
+    };
+    window.addEventListener('scroll', handleScroll, { passive: true });
+    handleScroll();
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
+
+  useEffect(() => {
+    const reveals = document.querySelectorAll('.scroll-reveal');
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('active');
+          observer.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.1, rootMargin: '0px 0px -60px 0px' });
+    reveals.forEach(el => observer.observe(el));
+    return () => observer.disconnect();
+  }, []);
 
   useEffect(() => {
     const handleKey = (e: KeyboardEvent) => { if (e.key === 'Escape') setInspectedPoster(null); };
@@ -71,7 +96,7 @@ export default function Home() {
     const pc = document.getElementById('hero-particles');
     if (!pc) return;
     pc.innerHTML = '';
-    for (let i = 0; i < 25; i++) {
+    for (let i = 0; i < 8; i++) {
       const p = document.createElement('div');
       p.className = 'particle';
       const size = Math.random() * 9 + 3;
@@ -141,24 +166,7 @@ export default function Home() {
           <div className="countdown-container fade-up delay-3">
             <GlowingEffect spread={60} glow={true} disabled={false} proximity={80} inactiveZone={0.01} borderWidth={2} />
             <p className="countdown-label">TICKETS SELLING FAST</p>
-            <div className="countdown">
-              <div className="time-box">
-                <span className="time-val">{timeLeft.days}</span>
-                <span className="time-text">Days</span>
-              </div>
-              <div className="time-box">
-                <span className="time-val">{timeLeft.hours}</span>
-                <span className="time-text">Hours</span>
-              </div>
-              <div className="time-box">
-                <span className="time-val">{timeLeft.minutes}</span>
-                <span className="time-text">Mins</span>
-              </div>
-              <div className="time-box">
-                <span className="time-val">{timeLeft.seconds}</span>
-                <span className="time-text">Secs</span>
-              </div>
-            </div>
+            <Countdown targetDate={targetEvent.date} />
           </div>
 
           <div className="hero-actions fade-up delay-4">

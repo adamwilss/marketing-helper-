@@ -1915,6 +1915,65 @@ details[open] .collapse-arrow {
     text-shadow: 0 0 10px rgba(255, 184, 0, 0.3);
 }
 
+/* Random Drinks Carousel */
+.drinks-carousel {
+    background: linear-gradient(160deg, #0c0906 0%, var(--color-bg) 100%);
+    overflow: hidden;
+    padding: 6rem 0 !important;
+}
+
+.carousel-wrapper {
+    width: 100%;
+    overflow: hidden;
+    background: rgba(255, 184, 0, 0.02);
+    border: 1px solid rgba(255, 184, 0, 0.1);
+    border-radius: 12px;
+    padding: 2rem 0;
+}
+
+.carousel-track {
+    display: flex;
+    gap: 1.5rem;
+    padding: 0 2rem;
+    width: fit-content;
+    animation: carouselScroll 25s linear infinite;
+    will-change: transform;
+}
+
+@keyframes carouselScroll {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-50%);
+    }
+}
+
+.carousel-wrapper:hover .carousel-track {
+    animation-play-state: paused;
+}
+
+.carousel-item {
+    flex-shrink: 0;
+    background: linear-gradient(135deg, rgba(255, 184, 0, 0.12) 0%, rgba(255, 184, 0, 0.04) 100%);
+    border: 1px solid rgba(255, 184, 0, 0.25);
+    border-radius: 8px;
+    padding: 1.2rem 2rem;
+    color: var(--color-gold);
+    font-weight: 600;
+    font-size: 0.95rem;
+    white-space: nowrap;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.carousel-item:hover {
+    background: linear-gradient(135deg, rgba(255, 184, 0, 0.2) 0%, rgba(255, 184, 0, 0.08) 100%);
+    border-color: rgba(255, 184, 0, 0.5);
+    transform: translateY(-4px);
+    box-shadow: 0 8px 20px rgba(255, 184, 0, 0.15);
+}
+
 .drinks-scroll-wrapper {
     width: 100%;
     overflow: hidden;

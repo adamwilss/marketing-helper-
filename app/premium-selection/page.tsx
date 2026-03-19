@@ -219,6 +219,37 @@ export default function PremiumSelection() {
         </div>
       </section>
 
+      {/* Random Drinks Carousel */}
+      <section className="drinks-carousel section dark-bg">
+        <div className="container">
+          <div className="scroll-reveal" style={{ textAlign: 'center', marginBottom: '3rem' }}>
+            <p className="section-overline">Grab A Round</p>
+            <h2 className="section-title">Random <span className="gold-text">Selection</span></h2>
+          </div>
+          <div className="carousel-wrapper scroll-reveal">
+            <div className="carousel-track">
+              <div className="carousel-item">Murphy's Neck Oil</div>
+              <div className="carousel-item">Rosé</div>
+              <div className="carousel-item">Jameson</div>
+              <div className="carousel-item">Moretti</div>
+              <div className="carousel-item">Chardonnay</div>
+              <div className="carousel-item">Aperol</div>
+              <div className="carousel-item">Guinness</div>
+              <div className="carousel-item">Prosecco</div>
+              <div className="carousel-item">Captain Morgan</div>
+              <div className="carousel-item">Stella</div>
+              <div className="carousel-item">Beefeater</div>
+              <div className="carousel-item">Shiraz</div>
+              {/* Duplicate for seamless loop */}
+              <div className="carousel-item">Murphy's Neck Oil</div>
+              <div className="carousel-item">Rosé</div>
+              <div className="carousel-item">Jameson</div>
+              <div className="carousel-item">Moretti</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* CTA Back */}
       <section className="premium-cta section dark-bg">
         <div className="container text-center">

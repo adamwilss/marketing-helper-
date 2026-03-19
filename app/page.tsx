@@ -204,9 +204,9 @@ export default function Home() {
       <section className="comparison section dark-bg" id="value">
         <div className="container">
           <div className="text-center scroll-reveal">
-            <h2 className="section-title">See The <span className="gold-text">Difference</span></h2>
-            <p className="comparison-subtitle">A Normal Night Out vs Rock &amp; Pour</p>
-            <div className="gold-divider"><span className="gold-diamond" /></div>
+            <h2 className="section-title">Where Does Your <span className="gold-text">Money</span> Go?</h2>
+            <p className="comparison-subtitle">Most nights end like this</p>
+            <div className="comparison-header-divider"></div>
           </div>
           <div className="comparison-table-wrapper scroll-reveal">
             <table className="comparison-table">
@@ -228,19 +228,22 @@ export default function Home() {
                   <td>£40–£80+ (adds up fast)</td>
                   <td className="included">Included</td>
                 </tr>
-                <tr>
+                <tr className="total-cost-row highlight-row">
                   <td className="row-label">Total Cost</td>
                   <td className="cost-highlight">
+                    <div className="cost-warning-label">MOST PEOPLE END UP HERE →</div>
                     <div className="cost-bar-wrapper">
-                      <span>£60–£120+</span>
+                      <span className="cost-amount">£60–£120+</span>
                       <div className="cost-bar cost-bar-problem" style={{width: '100%'}}></div>
                     </div>
                   </td>
-                  <td className="cost-highlight gold">
+                  <td className="cost-highlight gold cost-highlight-dominant">
+                    <div className="cost-tag-fixed">FIXED PRICE</div>
                     <div className="cost-bar-wrapper">
-                      <span>£49–£55 FIXED<br/><span className="no-surprise-text">No surprise spend</span></span>
+                      <span className="cost-amount">£49–£55</span>
                       <div className="cost-bar cost-bar-gold" style={{width: '45%'}}></div>
                     </div>
+                    <div className="cost-tag-no-surprise">NO SURPRISE SPEND</div>
                   </td>
                 </tr>
                 <tr>
@@ -286,6 +289,10 @@ export default function Home() {
               </tbody>
             </table>
           </div>
+
+          <p className="comparison-micro-proof scroll-reveal">
+            Most guests spend £80+ on a normal night out without realising it.
+          </p>
 
           <div className="comparison-conclusion scroll-reveal">
             <p><strong>Most people don't plan to spend £100 on a night out. They just end up there.</strong></p>

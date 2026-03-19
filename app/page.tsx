@@ -214,7 +214,7 @@ export default function Home() {
                 <tr>
                   <th></th>
                   <th className="col-normal">A Normal Night Out</th>
-                  <th className="col-rp"><img src="/title-logo-transparent.webp" alt="Rock & Pour" className="table-logo" /> <br /> Your Night Sorted</th>
+                  <th className="col-rp"><img src="/title-logo-transparent.webp" alt="Rock & Pour" className="table-logo" /></th>
                 </tr>
               </thead>
               <tbody>
@@ -232,17 +232,11 @@ export default function Home() {
                   <td className="row-label">Total Cost</td>
                   <td className="cost-highlight">
                     <div className="cost-warning-label">MOST PEOPLE END UP HERE →</div>
-                    <div className="cost-bar-wrapper">
-                      <span className="cost-amount">£60–£120+</span>
-                      <div className="cost-bar cost-bar-problem" style={{width: '100%'}}></div>
-                    </div>
+                    <span className="cost-amount">£60–£120+</span>
                   </td>
                   <td className="cost-highlight gold cost-highlight-dominant">
                     <div className="cost-tag-fixed">FIXED PRICE</div>
-                    <div className="cost-bar-wrapper">
-                      <span className="cost-amount">£49–£55</span>
-                      <div className="cost-bar cost-bar-gold" style={{width: '45%'}}></div>
-                    </div>
+                    <span className="cost-amount">£49–£55</span>
                     <div className="cost-tag-no-surprise">NO SURPRISE SPEND</div>
                   </td>
                 </tr>
@@ -296,7 +290,7 @@ export default function Home() {
 
           <div className="comparison-conclusion scroll-reveal">
             <p><strong>Most people don't plan to spend £100 on a night out. They just end up there.</strong></p>
-            <p>This just locks in the same night for less, with none of the hassle.</p>
+            <p>The same night for less, with none of the hassle.</p>
           </div>
 
           <p className="comparison-footnote scroll-reveal">

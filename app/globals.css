@@ -1535,34 +1535,46 @@ a {
 .comparison-card {
     position: relative;
     border-radius: 8px;
-    padding: 2rem;
-    border: 1px solid rgba(255, 184, 0, 0.12);
+    padding: 2.5rem;
+    border: 2px solid;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.4);
 }
 
 .comparison-card--normal {
-    background: rgba(255, 255, 255, 0.02);
-    border-color: rgba(255, 255, 255, 0.08);
+    background: rgba(220, 80, 80, 0.08);
+    border-color: rgba(220, 80, 80, 0.4);
 }
 
 .comparison-card--rp {
-    background: rgba(255, 184, 0, 0.04);
-    border-color: rgba(255, 184, 0, 0.25);
+    background: rgba(255, 184, 0, 0.12);
+    border-color: var(--color-gold);
+    box-shadow: 0 10px 40px rgba(255, 184, 0, 0.2);
 }
 
 .comparison-card-header {
-    padding-bottom: 1.2rem;
-    margin-bottom: 1.2rem;
-    border-bottom: 1px solid rgba(255, 184, 0, 0.12);
+    padding-bottom: 1.5rem;
+    margin-bottom: 1.5rem;
+    border-bottom: 2px solid;
+}
+
+.comparison-card--normal .comparison-card-header {
+    border-bottom-color: rgba(220, 80, 80, 0.3);
+}
+
+.comparison-card--rp .comparison-card-header {
+    border-bottom-color: var(--color-gold);
 }
 
 .comparison-card--normal .comparison-card-header h3 {
-    color: var(--color-text-muted);
-    font-size: 1.1rem;
+    color: rgba(220, 80, 80, 0.9);
+    font-size: 1.25rem;
+    font-weight: 700;
 }
 
 .comparison-card--rp .comparison-card-header h3 {
     color: var(--color-gold);
-    font-size: 1.1rem;
+    font-size: 1.25rem;
+    font-weight: 700;
 }
 
 .comparison-list {
@@ -1577,45 +1589,54 @@ a {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    font-size: 0.95rem;
-    padding: 0.5rem 0;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.04);
+    font-size: 1rem;
+    padding: 0.75rem 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.06);
 }
 
 .comparison-item--cost span:first-child {
-    color: var(--color-text-muted);
+    color: rgba(255, 255, 255, 0.7);
+    font-weight: 500;
 }
 
 .comparison-item--cost span:last-child {
-    color: rgba(220, 80, 80, 0.85);
-    font-weight: 600;
+    color: rgba(220, 80, 80, 1);
+    font-weight: 700;
     font-family: 'Montserrat', sans-serif;
+    font-size: 1.05rem;
 }
 
 .comparison-item--included span:first-child {
     color: var(--color-text);
+    font-weight: 500;
 }
 
 .comparison-item--included span:last-child {
     color: var(--color-gold);
-    font-weight: 700;
-    font-size: 1.1rem;
+    font-weight: 800;
+    font-size: 1.3rem;
 }
 
 .comparison-total {
     font-family: 'Playfair Display', serif;
-    font-size: 1.3rem;
-    font-weight: 700;
-    padding-top: 1rem;
-    border-top: 1px solid rgba(255, 184, 0, 0.15);
+    font-size: 1.6rem;
+    font-weight: 900;
+    padding: 1.5rem 1rem;
+    border-top: 2px solid;
+    margin-top: 1.5rem;
+    border-radius: 6px;
 }
 
 .comparison-total--normal {
-    color: rgba(220, 80, 80, 0.85);
+    color: rgba(220, 80, 80, 1);
+    background: rgba(220, 80, 80, 0.1);
+    border-top-color: rgba(220, 80, 80, 0.3);
 }
 
 .comparison-total--rp {
     color: var(--color-gold);
+    background: rgba(255, 184, 0, 0.15);
+    border-top-color: var(--color-gold);
 }
 
 .comparison-footnote {

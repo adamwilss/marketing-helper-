@@ -204,69 +204,83 @@ export default function Home() {
       <section className="comparison section dark-bg" id="value">
         <div className="container">
           <div className="text-center scroll-reveal">
-            <p className="section-overline">Do The Maths</p>
-            <h2 className="section-title">A <span className="gold-text">Normal Night Out</span> vs Rock &amp; Pour</h2>
+            <p className="section-overline">💥 Improved Version</p>
+            <h2 className="section-title">💸 Do The <span className="gold-text">Math</span></h2>
+            <p className="comparison-subtitle">A Normal Night Out vs Rock &amp; Pour</p>
             <div className="gold-divider"><span className="gold-diamond" /></div>
           </div>
-          <div className="comparison-grid scroll-reveal">
-            {/* Left column — Normal Night Out */}
-            <div className="comparison-card comparison-card--normal">
-              <div className="comparison-card-header">
-                <h3>A Normal Night Out</h3>
-              </div>
-              <ul className="comparison-list">
-                <li className="comparison-item comparison-item--cost">
-                  <span>Entry across venues</span><span>£5–£15 each</span>
-                </li>
-                <li className="comparison-item comparison-item--cost">
-                  <span>2–4 drinks per venue</span><span>£20–£80</span>
-                </li>
-                <li className="comparison-item comparison-item--cost">
-                  <span>Venue hopping &amp; queues</span><span>1–2 hours lost</span>
-                </li>
-                <li className="comparison-item comparison-item--cost">
-                  <span>Group coordination chaos</span><span>People get lost</span>
-                </li>
-                <li className="comparison-item comparison-item--cost">
-                  <span>End-of-night regret</span><span>How much?!</span>
-                </li>
-              </ul>
-              <div className="comparison-total comparison-total--normal">
-                Total: £60–£120+
-              </div>
-            </div>
+          <div className="comparison-table-wrapper scroll-reveal">
+            <table className="comparison-table">
+              <thead>
+                <tr>
+                  <th></th>
+                  <th className="col-normal">A Normal Night Out</th>
+                  <th className="col-rp"><img src="/title-logo-transparent.webp" alt="Rock & Pour" className="table-logo" /> <br /> Your Night Sorted</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td className="row-label">💰 Entry</td>
+                  <td>£5–£15 per venue</td>
+                  <td className="included">✅ Included</td>
+                </tr>
+                <tr>
+                  <td className="row-label">🍻 Drinks Spend</td>
+                  <td>£40–£80+ (adds up fast)</td>
+                  <td className="included">✅ Included</td>
+                </tr>
+                <tr>
+                  <td className="row-label">💵 Total Cost</td>
+                  <td className="cost-highlight">£60–£120+</td>
+                  <td className="cost-highlight gold">£49–£55 FIXED<br/><span className="no-surprise-text">No surprise spend</span></td>
+                </tr>
+                <tr>
+                  <td className="row-label">🎯 Price Certainty</td>
+                  <td className="problem">❌ No idea what you'll spend</td>
+                  <td className="included">✅ One fixed price</td>
+                </tr>
+                <tr>
+                  <td className="row-label">🚗 Venue Hopping</td>
+                  <td className="problem">❌ Multiple venues</td>
+                  <td className="included">✅ One place all night</td>
+                </tr>
+                <tr>
+                  <td className="row-label">⏱️ Time Wasted</td>
+                  <td className="problem">❌ 1–2 hours in queues/walking</td>
+                  <td className="included">✅ Straight in, stay put</td>
+                </tr>
+                <tr>
+                  <td className="row-label">👥 Group Coordination</td>
+                  <td className="problem">❌ People split up / lost</td>
+                  <td className="included">✅ Everyone together</td>
+                </tr>
+                <tr>
+                  <td className="row-label">🎸 Atmosphere</td>
+                  <td className="problem">❌ Hit or miss</td>
+                  <td className="included">✅ Live band all night</td>
+                </tr>
+                <tr>
+                  <td className="row-label">😰 Stress Level</td>
+                  <td className="problem">❌ Constant decisions</td>
+                  <td className="included">✅ Fully handled</td>
+                </tr>
+                <tr>
+                  <td className="row-label">🎉 End-of-Night Feeling</td>
+                  <td className="problem">❌ "How did I spend that?"</td>
+                  <td className="included">✅ No surprises, no regret</td>
+                </tr>
+                <tr>
+                  <td className="row-label">📋 Planning Required</td>
+                  <td className="problem">❌ Yes</td>
+                  <td className="included">✅ None</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
 
-            {/* Right column — Rock & Pour */}
-            <div className="comparison-card comparison-card--rp">
-              <GlowingEffect spread={50} glow={true} disabled={false} proximity={72} inactiveZone={0.01} borderWidth={2} />
-              <div className="comparison-card-header">
-                <img src="/title-logo-transparent.webp" alt="Rock & Pour" className="comparison-logo" />
-                <p className="comparison-logo-text">One Ticket</p>
-              </div>
-              <ul className="comparison-list">
-                <li className="comparison-item comparison-item--included">
-                  <span>Live band all night</span><span>✓</span>
-                </li>
-                <li className="comparison-item comparison-item--included">
-                  <span>Unlimited premium draught</span><span>✓</span>
-                </li>
-                <li className="comparison-item comparison-item--included">
-                  <span>Unlimited wines</span><span>✓</span>
-                </li>
-                <li className="comparison-item comparison-item--included">
-                  <span>Unlimited spirits</span><span>✓</span>
-                </li>
-                <li className="comparison-item comparison-item--included">
-                  <span>Soft drinks</span><span>✓</span>
-                </li>
-                <li className="comparison-item comparison-item--included">
-                  <span>Full night access, no queues</span><span>✓</span>
-                </li>
-              </ul>
-              <div className="comparison-total comparison-total--rp">
-                £55 online · £45 via box office
-              </div>
-            </div>
+          <div className="comparison-conclusion scroll-reveal">
+            <p><strong>Most people don't plan to spend £100 on a night out. They just end up there.</strong></p>
+            <p>This just locks in the same night for less, with none of the hassle.</p>
           </div>
 
           <p className="comparison-footnote scroll-reveal">

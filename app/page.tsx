@@ -221,57 +221,67 @@ export default function Home() {
                 <tr>
                   <td className="row-label">Entry</td>
                   <td>£5–£15 per venue</td>
-                  <td className="included">✓ Included</td>
+                  <td className="included">Included</td>
                 </tr>
                 <tr>
                   <td className="row-label">Drinks Spend</td>
                   <td>£40–£80+ (adds up fast)</td>
-                  <td className="included">✓ Included</td>
+                  <td className="included">Included</td>
                 </tr>
                 <tr>
                   <td className="row-label">Total Cost</td>
-                  <td className="cost-highlight">£60–£120+</td>
-                  <td className="cost-highlight gold">£49–£55 FIXED<br/><span className="no-surprise-text">No surprise spend</span></td>
+                  <td className="cost-highlight">
+                    <div className="cost-bar-wrapper">
+                      <span>£60–£120+</span>
+                      <div className="cost-bar cost-bar-problem" style={{width: '100%'}}></div>
+                    </div>
+                  </td>
+                  <td className="cost-highlight gold">
+                    <div className="cost-bar-wrapper">
+                      <span>£49–£55 FIXED<br/><span className="no-surprise-text">No surprise spend</span></span>
+                      <div className="cost-bar cost-bar-gold" style={{width: '45%'}}></div>
+                    </div>
+                  </td>
                 </tr>
                 <tr>
                   <td className="row-label">Price Certainty</td>
-                  <td className="problem">✗ No idea what you'll spend</td>
-                  <td className="included">✓ One fixed price</td>
+                  <td className="problem">No idea what you'll spend</td>
+                  <td className="included">One fixed price</td>
                 </tr>
                 <tr>
                   <td className="row-label">Venue Hopping</td>
-                  <td className="problem">✗ Multiple venues</td>
-                  <td className="included">✓ One place all night</td>
+                  <td className="problem">Multiple venues</td>
+                  <td className="included">One place all night</td>
                 </tr>
                 <tr>
                   <td className="row-label">Time Wasted</td>
-                  <td className="problem">✗ 1–2 hours in queues/walking</td>
-                  <td className="included">✓ Straight in, stay put</td>
+                  <td className="problem">1–2 hours in queues/walking</td>
+                  <td className="included">Straight in, stay put</td>
                 </tr>
                 <tr>
                   <td className="row-label">Group Coordination</td>
-                  <td className="problem">✗ People split up / lost</td>
-                  <td className="included">✓ Everyone together</td>
+                  <td className="problem">People split up / lost</td>
+                  <td className="included">Everyone together</td>
                 </tr>
                 <tr>
                   <td className="row-label">Atmosphere</td>
-                  <td className="problem">✗ Hit or miss</td>
-                  <td className="included">✓ Live band all night</td>
+                  <td className="problem">Hit or miss</td>
+                  <td className="included">Live band all night</td>
                 </tr>
                 <tr>
                   <td className="row-label">Stress Level</td>
-                  <td className="problem">✗ Constant decisions</td>
-                  <td className="included">✓ Fully handled</td>
+                  <td className="problem">Constant decisions</td>
+                  <td className="included">Fully handled</td>
                 </tr>
                 <tr>
                   <td className="row-label">End-of-Night Feeling</td>
-                  <td className="problem">✗ "How did I spend that?"</td>
-                  <td className="included">✓ No surprises, no regret</td>
+                  <td className="problem">"How did I spend that?"</td>
+                  <td className="included">No surprises, no regret</td>
                 </tr>
                 <tr>
                   <td className="row-label">Planning Required</td>
-                  <td className="problem">✗ Yes</td>
-                  <td className="included">✓ None</td>
+                  <td className="problem">Yes</td>
+                  <td className="included">None</td>
                 </tr>
               </tbody>
             </table>

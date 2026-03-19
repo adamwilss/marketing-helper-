@@ -324,19 +324,36 @@ export default function Home() {
       {/* On Tap All Night — Hero Section */}
       <section className="on-tap-hero section dark-bg">
         <div className="container">
+          <h2 className="section-title" style={{ textAlign: 'center', marginBottom: '3rem' }}>On Tap <span className="gold-text">All Night</span></h2>
           <div className="on-tap-grid scroll-reveal">
             <div className="on-tap-card on-tap-primary">
               <div className="on-tap-badge">ON TAP ALL NIGHT</div>
+              <div className="on-tap-logo-wrapper">
+                <img src="/brands/murphys-logo.png" alt="Murphy's Irish Stout" className="on-tap-logo" />
+              </div>
               <h3>Murphy&apos;s<br />Neck Oil</h3>
               <p>Fresh, hoppy, all night long</p>
             </div>
             <div className="on-tap-card on-tap-primary">
               <div className="on-tap-badge">ON TAP ALL NIGHT</div>
+              <div className="on-tap-logo-wrapper">
+                <img src="/brands/moretti-logo.png" alt="Birra Moretti" className="on-tap-logo" />
+              </div>
               <h3>Moretti</h3>
               <p>Classic Italian lager, poured cold</p>
             </div>
           </div>
           <p className="on-tap-note scroll-reveal">Plus Damn Lemon, Cruz Campo, Guinness &amp; more on draft</p>
+          <div className="on-tap-secondary-row scroll-reveal">
+            <div className="on-tap-secondary-card">
+              <img src="/brands/damm-logo.png" alt="Damm Lemon" className="on-tap-secondary-logo" />
+              <p>Damn Lemon</p>
+            </div>
+            <div className="on-tap-secondary-card">
+              <img src="/brands/cruzcampo-logo.png" alt="Cruz Campo" className="on-tap-secondary-logo" />
+              <p>Cruz Campo</p>
+            </div>
+          </div>
         </div>
       </section>
 

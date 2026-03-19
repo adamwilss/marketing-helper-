@@ -1819,35 +1819,12 @@ a {
     color: #ff6b6b;
     font-weight: 700;
     background: linear-gradient(90deg, rgba(220, 80, 80, 0.08), transparent);
-    display: flex;
-    align-items: center;
-    gap: 0.8rem;
-}
-
-.comparison-table td.problem::before {
-    content: '✗';
-    font-size: 1.2rem;
-    color: #ff6b6b;
-    font-weight: 700;
-    opacity: 0.95;
-    flex-shrink: 0;
 }
 
 .comparison-table td.included {
     color: var(--color-gold);
     font-weight: 700;
     background: linear-gradient(90deg, rgba(255, 184, 0, 0.06), transparent);
-    display: flex;
-    align-items: center;
-    gap: 0.8rem;
-}
-
-.comparison-table td.included::before {
-    content: '✓';
-    font-size: 1.2rem;
-    color: var(--color-gold);
-    font-weight: 700;
-    flex-shrink: 0;
 }
 
 .comparison-table td.cost-highlight {

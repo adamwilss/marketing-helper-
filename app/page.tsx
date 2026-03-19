@@ -321,6 +321,60 @@ export default function Home() {
         </div>
       </section>
 
+      {/* All Drinks Showcase — Scrolling */}
+      <section className="drinks-showcase section">
+        <div className="container">
+          <div className="scroll-reveal" style={{ textAlign: 'center', marginBottom: '3rem' }}>
+            <p className="section-overline">The Full Bar</p>
+            <h2 className="section-title">Every <span className="gold-text">Brand</span> Included</h2>
+          </div>
+          <div className="drinks-scroll-wrapper">
+            <div className="drinks-scroll">
+              <div className="drink-badge">Gordon&apos;s 0%</div>
+              <div className="drink-badge">Gordon&apos;s Dry</div>
+              <div className="drink-badge">White Peach</div>
+              <div className="drink-badge">Beefeater</div>
+              <div className="drink-badge">Whitley Gin</div>
+              <div className="drink-badge">Aperol</div>
+              <div className="drink-badge">Disaronno</div>
+              <div className="drink-badge">Velvet</div>
+              <div className="drink-badge">Malibu</div>
+              <div className="drink-badge">Bacardi</div>
+              <div className="drink-badge">Havana Club</div>
+              <div className="drink-badge">Absolut Citrus</div>
+              <div className="drink-badge">Absolut Vanilla</div>
+              <div className="drink-badge">Captain Morgan</div>
+              <div className="drink-badge">Kraken</div>
+              <div className="drink-badge">Jameson</div>
+              <div className="drink-badge">Jack Daniels</div>
+              <div className="drink-badge">Southern Comfort</div>
+              <div className="drink-badge">Guinness</div>
+              <div className="drink-badge">Guinness Zero</div>
+              <div className="drink-badge">Budweiser</div>
+              <div className="drink-badge">Moretti</div>
+              <div className="drink-badge">Corona</div>
+              <div className="drink-badge">Stella</div>
+              <div className="drink-badge">Peroni Zero</div>
+              <div className="drink-badge">Kopparberg</div>
+              <div className="drink-badge">J2O</div>
+              <div className="drink-badge">Fanta</div>
+              <div className="drink-badge">Pink Ting</div>
+              {/* Duplicate for seamless scroll */}
+              <div className="drink-badge">Gordon&apos;s 0%</div>
+              <div className="drink-badge">Gordon&apos;s Dry</div>
+              <div className="drink-badge">White Peach</div>
+              <div className="drink-badge">Beefeater</div>
+              <div className="drink-badge">Whitley Gin</div>
+              <div className="drink-badge">Aperol</div>
+              <div className="drink-badge">Disaronno</div>
+              <div className="drink-badge">Velvet</div>
+              <div className="drink-badge">Malibu</div>
+              <div className="drink-badge">Bacardi</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Poster Section */}
       <section className="poster-section section" id="events">
         <div className="container text-center">

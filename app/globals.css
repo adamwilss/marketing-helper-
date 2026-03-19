@@ -1652,6 +1652,66 @@ a {
     margin-top: 1rem;
 }
 
+/* Drinks Showcase Scroll */
+.drinks-showcase {
+    background: linear-gradient(160deg, var(--color-bg) 0%, #0c0906 100%);
+    overflow: hidden;
+    padding: 6rem 0 !important;
+}
+
+.drinks-scroll-wrapper {
+    width: 100%;
+    overflow: hidden;
+    background: rgba(255, 184, 0, 0.02);
+    border: 1px solid rgba(255, 184, 0, 0.1);
+    border-radius: 12px;
+    padding: 2rem 0;
+}
+
+.drinks-scroll {
+    display: flex;
+    gap: 1.5rem;
+    padding: 0 2rem;
+    width: fit-content;
+    animation: scrollDrinks 30s linear infinite;
+    will-change: transform;
+}
+
+@keyframes scrollDrinks {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-50%);
+    }
+}
+
+.drinks-scroll:hover {
+    animation-play-state: paused;
+}
+
+.drink-badge {
+    flex-shrink: 0;
+    background: linear-gradient(135deg, rgba(255, 184, 0, 0.15) 0%, rgba(255, 184, 0, 0.05) 100%);
+    border: 1px solid rgba(255, 184, 0, 0.3);
+    border-radius: 8px;
+    padding: 1rem 1.8rem;
+    color: var(--color-gold);
+    font-weight: 600;
+    font-size: 0.95rem;
+    letter-spacing: 0.5px;
+    white-space: nowrap;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.drink-badge:hover {
+    background: linear-gradient(135deg, rgba(255, 184, 0, 0.25) 0%, rgba(255, 184, 0, 0.15) 100%);
+    border-color: rgba(255, 184, 0, 0.6);
+    transform: translateY(-4px);
+    box-shadow: 0 10px 20px rgba(255, 184, 0, 0.15);
+}
+
 /* House Rules Page */
 .house-rules-page {
     padding-top: 80px;

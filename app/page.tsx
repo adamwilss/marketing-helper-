@@ -346,8 +346,8 @@ export default function Home() {
           <p className="on-tap-note scroll-reveal">Plus Damn Lemon, Cruz Campo, Guinness &amp; more on draft</p>
           <div className="on-tap-secondary-row scroll-reveal">
             <div className="on-tap-secondary-card">
-              <img src="/brands/damm-logo.png" alt="Damm Lemon" className="on-tap-secondary-logo" />
-              <p>Damn Lemon</p>
+              <img src="/brands/beavertown-logo.png" alt="Beavertown Neck Oil" className="on-tap-secondary-logo" />
+              <p>Beavertown Neck Oil</p>
             </div>
             <div className="on-tap-secondary-card">
               <img src="/brands/cruzcampo-logo.png" alt="Cruz Campo" className="on-tap-secondary-logo" />

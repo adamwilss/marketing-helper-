@@ -1652,6 +1652,69 @@ a {
     margin-top: 1rem;
 }
 
+/* On Tap All Night Section */
+.on-tap-hero {
+    padding: 6rem 0 !important;
+}
+
+.on-tap-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    margin-bottom: 2.5rem;
+}
+
+.on-tap-card {
+    position: relative;
+    background: rgba(255, 184, 0, 0.08);
+    border: 1px solid rgba(255, 184, 0, 0.25);
+    border-radius: 12px;
+    padding: 2.5rem;
+    transition: all 0.3s ease;
+}
+
+.on-tap-card:hover {
+    border-color: rgba(255, 184, 0, 0.5);
+    background: rgba(255, 184, 0, 0.12);
+    box-shadow: 0 15px 40px rgba(255, 184, 0, 0.15);
+    transform: translateY(-4px);
+}
+
+.on-tap-primary h3 {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 2.2rem;
+    color: var(--color-gold);
+    margin-bottom: 0.5rem;
+    letter-spacing: 2px;
+    line-height: 1.2;
+}
+
+.on-tap-primary p {
+    color: var(--color-text-muted);
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+.on-tap-badge {
+    display: inline-block;
+    background: var(--color-gold);
+    color: #000;
+    padding: 0.4rem 1rem;
+    border-radius: 20px;
+    font-size: 0.65rem;
+    letter-spacing: 2px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 1.2rem;
+}
+
+.on-tap-note {
+    text-align: center;
+    color: var(--color-text-muted);
+    font-size: 0.95rem;
+    font-style: italic;
+}
+
 /* Drinks Showcase Scroll */
 .drinks-showcase {
     background: linear-gradient(160deg, var(--color-bg) 0%, #0c0906 100%);
@@ -1710,6 +1773,22 @@ a {
     border-color: rgba(255, 184, 0, 0.6);
     transform: translateY(-4px);
     box-shadow: 0 10px 20px rgba(255, 184, 0, 0.15);
+}
+
+.drink-badge--featured {
+    background: linear-gradient(135deg, var(--color-gold) 0%, rgba(255, 184, 0, 0.8) 100%);
+    color: #000;
+    border-color: var(--color-gold);
+    font-weight: 700;
+    font-size: 1rem;
+    padding: 1rem 2rem;
+    box-shadow: 0 8px 25px rgba(255, 184, 0, 0.3);
+}
+
+.drink-badge--featured:hover {
+    background: linear-gradient(135deg, #FFC933 0%, var(--color-gold) 100%);
+    box-shadow: 0 12px 35px rgba(255, 184, 0, 0.5);
+    transform: translateY(-6px);
 }
 
 /* House Rules Page */
@@ -1909,6 +1988,10 @@ a {
     }
 
     .comparison-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .on-tap-grid {
         grid-template-columns: 1fr;
     }
 

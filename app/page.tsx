@@ -321,6 +321,25 @@ export default function Home() {
         </div>
       </section>
 
+      {/* On Tap All Night — Hero Section */}
+      <section className="on-tap-hero section dark-bg">
+        <div className="container">
+          <div className="on-tap-grid scroll-reveal">
+            <div className="on-tap-card on-tap-primary">
+              <div className="on-tap-badge">ON TAP ALL NIGHT</div>
+              <h3>Murphy&apos;s<br />Neck Oil</h3>
+              <p>Fresh, hoppy, all night long</p>
+            </div>
+            <div className="on-tap-card on-tap-primary">
+              <div className="on-tap-badge">ON TAP ALL NIGHT</div>
+              <h3>Moretti</h3>
+              <p>Classic Italian lager, poured cold</p>
+            </div>
+          </div>
+          <p className="on-tap-note scroll-reveal">Plus Damn Lemon, Cruz Campo, Guinness &amp; more on draft</p>
+        </div>
+      </section>
+
       {/* All Drinks Showcase — Scrolling */}
       <section className="drinks-showcase section">
         <div className="container">
@@ -330,6 +349,16 @@ export default function Home() {
           </div>
           <div className="drinks-scroll-wrapper">
             <div className="drinks-scroll">
+              <div className="drink-badge drink-badge--featured">Murphy&apos;s Neck Oil</div>
+              <div className="drink-badge drink-badge--featured">Moretti</div>
+              <div className="drink-badge">Damn Lemon</div>
+              <div className="drink-badge">Cruz Campo</div>
+              <div className="drink-badge">Guinness</div>
+              <div className="drink-badge">Guinness Zero</div>
+              <div className="drink-badge">Budweiser</div>
+              <div className="drink-badge">Corona</div>
+              <div className="drink-badge">Stella</div>
+              <div className="drink-badge">Peroni Zero</div>
               <div className="drink-badge">Gordon&apos;s 0%</div>
               <div className="drink-badge">Gordon&apos;s Dry</div>
               <div className="drink-badge">White Peach</div>
@@ -348,28 +377,23 @@ export default function Home() {
               <div className="drink-badge">Jameson</div>
               <div className="drink-badge">Jack Daniels</div>
               <div className="drink-badge">Southern Comfort</div>
-              <div className="drink-badge">Guinness</div>
-              <div className="drink-badge">Guinness Zero</div>
-              <div className="drink-badge">Budweiser</div>
-              <div className="drink-badge">Moretti</div>
-              <div className="drink-badge">Corona</div>
-              <div className="drink-badge">Stella</div>
-              <div className="drink-badge">Peroni Zero</div>
               <div className="drink-badge">Kopparberg</div>
               <div className="drink-badge">J2O</div>
               <div className="drink-badge">Fanta</div>
               <div className="drink-badge">Pink Ting</div>
+              <div className="drink-badge">Rioja</div>
+              <div className="drink-badge">Shiraz</div>
+              <div className="drink-badge">Malbec</div>
+              <div className="drink-badge">Prosecco</div>
+              <div className="drink-badge">Pinot Grigio</div>
+              <div className="drink-badge">Chardonnay</div>
+              <div className="drink-badge">Rosé</div>
               {/* Duplicate for seamless scroll */}
-              <div className="drink-badge">Gordon&apos;s 0%</div>
-              <div className="drink-badge">Gordon&apos;s Dry</div>
-              <div className="drink-badge">White Peach</div>
-              <div className="drink-badge">Beefeater</div>
-              <div className="drink-badge">Whitley Gin</div>
-              <div className="drink-badge">Aperol</div>
-              <div className="drink-badge">Disaronno</div>
-              <div className="drink-badge">Velvet</div>
-              <div className="drink-badge">Malibu</div>
-              <div className="drink-badge">Bacardi</div>
+              <div className="drink-badge drink-badge--featured">Murphy&apos;s Neck Oil</div>
+              <div className="drink-badge drink-badge--featured">Moretti</div>
+              <div className="drink-badge">Damn Lemon</div>
+              <div className="drink-badge">Cruz Campo</div>
+              <div className="drink-badge">Guinness</div>
             </div>
           </div>
         </div>

@@ -121,7 +121,7 @@ export default function Home() {
 
           <div className="hero-actions fade-up delay-4">
             <a href="https://www.skiddle.com/whats-on/Warrington/The-Bowdon-Rooms/Rock--Pour/42147525/" target="_blank" rel="noreferrer" className="btn btn-gold btn-large">GET YOUR TICKETS — £55</a>
-            <p className="box-office-note">Or call the box office and save £10 — <a href="tel:01619268992">0161 926 8992</a></p>
+            <p className="box-office-note">Or call the box office and save money — <a href="tel:01619268992">0161 926 8992</a></p>
           </div>
         </div>
         <div className="hero-crowd">

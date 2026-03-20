@@ -1,5 +1,5 @@
 "use client";
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState, useCallback } from "react";
 import Image from "next/image";
 import { Typewriter } from "@/components/ui/typewriter";
 import { GlowingEffect } from "@/components/ui/glowing-effect";
@@ -18,7 +18,7 @@ const eventsData = [
   }
 ];
 
-function Countdown({ targetDate }: { targetDate: string }) {
+const Countdown = React.memo(function Countdown({ targetDate }: { targetDate: string }) {
   const [timeLeft, setTimeLeft] = useState({ days: "00", hours: "00", minutes: "00", seconds: "00" });
   useEffect(() => {
     const countDownDate = new Date(targetDate).getTime();
@@ -45,18 +45,21 @@ function Countdown({ targetDate }: { targetDate: string }) {
       <div className="time-box"><span className="time-val">{timeLeft.seconds}</span><span className="time-text">Secs</span></div>
     </div>
   );
-}
+});
 
 export default function Home() {
   const [inspectedPoster, setInspectedPoster] = useState<string | null>(null);
 
   const targetEvent = eventsData.find(e => !e.soldOut && new Date(e.date).getTime() > new Date().getTime()) || eventsData[0];
 
-  useEffect(() => {
-    const handleKey = (e: KeyboardEvent) => { if (e.key === 'Escape') setInspectedPoster(null); };
-    window.addEventListener('keydown', handleKey);
-    return () => window.removeEventListener('keydown', handleKey);
+  const handleEscKey = useCallback((e: KeyboardEvent) => {
+    if (e.key === 'Escape') setInspectedPoster(null);
   }, []);
+
+  useEffect(() => {
+    window.addEventListener('keydown', handleEscKey);
+    return () => window.removeEventListener('keydown', handleEscKey);
+  }, [handleEscKey]);
 
   useEffect(() => {
     const pc = document.getElementById('hero-particles');

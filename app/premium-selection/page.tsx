@@ -209,6 +209,11 @@ export default function PremiumSelection() {
               <div className="drink-item">Pink Ting</div>
             </div>
           </details>
+
+          <div className="scroll-reveal" style={{ textAlign: 'center', marginTop: '3rem', marginBottom: '1rem' }}>
+            <p className="section-overline">& More</p>
+            <p style={{ color: 'rgba(255, 255, 255, 0.7)', fontSize: '1rem' }}>Plus house specials, seasonal offerings & whatever's pouring that night</p>
+          </div>
         </div>
       </section>
 

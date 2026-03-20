@@ -186,31 +186,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Terry's Story Section */}
-      <section className="terrys-story section" id="terrys-story">
-        <div className="container">
-          <div className="story-inner scroll-reveal">
-            <p className="section-overline">How It Started</p>
-            <h2 className="section-title">The Night That <span className="gold-text">Changed Everything</span></h2>
-            <div className="gold-rule-left" />
-            <div className="story-body">
-              <h3 className="story-subheading">A Typical Manchester Night Out Gone Wrong</h3>
-              <p className="story-paragraph">One Saturday night in Manchester, Terry found himself caught in the all-too-familiar trap of a disorganized night out. The evening started with promise — mates ready to go, energy high, city centre calling. But within the first few hours, reality set in. An hour-long queue outside the first venue. A £15 entry charge that wasn't mentioned online. A £14 cocktail that was more ice than drink. Another venue with a different cover charge that magically increased at the door. By midnight, he'd spent £60 and was increasingly frustrated, still searching for somewhere decent to actually settle and enjoy himself.</p>
-              <p className="story-paragraph">It was the kind of night that should have been brilliant — great mates, diverse venues, vibrant city centre energy — but it was being quietly destroyed from every direction. The money was disappearing without bringing any proportional joy. No single venue was delivering what he actually wanted: authentic atmosphere, proper live music, quality drinks without the financial anxiety, and a group that could actually stay together without someone getting lost or frustrated.</p>
-              <h3 className="story-subheading">The Frustration Becomes an Idea</h3>
-              <blockquote className="story-quote">
-                <span className="gold-text">&quot;I wanted a night where you could just arrive, enjoy yourself, and never have to think about money again until you got home. Real music. Real drinks. Real friends. All in one place.&quot;</span>
-                <cite>— Terry, Founder</cite>
-              </blockquote>
-              <p className="story-paragraph">That moment of clarity crystallized into something bigger. What if there was a better way? What if one night, in one room, with one ticket price, you could have everything covered? No hidden charges. No surprise bill at the end. No coordination headaches. Just pure experience.</p>
-              <h3 className="story-subheading">Rock &amp; Pour Was Born</h3>
-              <p className="story-paragraph">Rock &amp; Pour was built directly on that frustration and that insight. Simple formula: One fixed-price ticket (£55). One incredible live band. Unlimited premium drinks all night. One incredible venue. The entire experience designed so that the only decision you make is when to arrive and how to celebrate. Your group stays together. Your budget stays predictable. Your night stays brilliant.</p>
-              <p className="story-paragraph">It's not just another event. It's the antidote to expensive, chaotic, fragmented nights out. Every element — the band selection, the drinks menu, the atmosphere — is curated around one principle: <strong>give people an unforgettable experience without the financial stress or coordination nightmare</strong>.</p>
-            </div>
-          </div>
-        </div>
-      </section>
-
       {/* Comparison Section */}
       <section className="comparison section dark-bg" id="value">
         <div className="container">

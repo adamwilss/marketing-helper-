@@ -10,7 +10,7 @@ export const metadata: Metadata = {
   metadataBase: new URL("https://www.rockandpour.co.uk"),
   title: "Rock & Pour | Live Rock Music & Premium Drinks Night at The Bowdon Rooms",
   description:
-    "Rock & Pour is a night of live rock music and free premium drinks at The Bowdon Rooms. Enjoy incredible bands and an unforgettable music and drinks experience.",
+    "Rock & Pour is a premium live music and drinks experience at The Bowdon Rooms in Manchester. Enjoy live rock bands with included premium drinks.",
   alternates: {
     canonical: "/",
   },
@@ -21,7 +21,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Rock & Pour | Live Rock Music & Premium Drinks Night at The Bowdon Rooms",
     description:
-      "Rock & Pour is a night of live rock music and free premium drinks at The Bowdon Rooms. Enjoy incredible bands and an unforgettable music and drinks experience.",
+      "Rock & Pour is a premium live music and drinks experience at The Bowdon Rooms in Manchester. Enjoy live rock bands with included premium drinks.",
     url: "https://www.rockandpour.co.uk",
     siteName: "Rock & Pour",
     type: "website",
@@ -38,7 +38,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Rock & Pour | Live Rock Music & Premium Drinks Night at The Bowdon Rooms",
     description:
-      "Rock & Pour is a night of live rock music and free premium drinks at The Bowdon Rooms. Enjoy incredible bands and an unforgettable music and drinks experience.",
+      "Rock & Pour is a premium live music and drinks experience at The Bowdon Rooms in Manchester. Enjoy live rock bands with included premium drinks.",
     images: ["/POSTER.png"],
   },
 };

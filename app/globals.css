@@ -3456,3 +3456,597 @@ main.section tbody tr:last-child td {
         gap: 1.2rem;
     }
 }
+
+/* ══════════════════════════════════════════════════════════
+   PREMIUM SEO PAGE ENHANCEMENTS
+   Visual polish for all 58 SEO content pages
+   ══════════════════════════════════════════════════════════ */
+
+/* ── 1. Page Fade-In Animation ──────────────────────────── */
+
+@keyframes pageFadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(16px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+main.section:not(.hero) .container {
+    animation: pageFadeIn 0.7s ease-out both;
+}
+
+/* ── 2. Hero Area — H1 + Subtitle ───────────────────────── */
+
+main.section:not(.hero) .container > .page-h1 {
+    background: linear-gradient(
+        180deg,
+        rgba(255, 184, 0, 0.06) 0%,
+        rgba(255, 184, 0, 0.02) 60%,
+        transparent 100%
+    );
+    border-radius: 16px;
+    padding: 2.5rem 2rem 2rem;
+    margin-bottom: 2rem;
+}
+
+/* Subtitle paragraph (the first p right after H1) */
+main.section:not(.hero) .container > p:first-of-type {
+    background: linear-gradient(
+        180deg,
+        transparent 0%,
+        rgba(255, 184, 0, 0.03) 50%,
+        transparent 100%
+    );
+    border-radius: 12px;
+    padding: 1.5rem 2rem;
+    margin-bottom: 3rem !important;
+    font-size: 1.15rem !important;
+    line-height: 1.85 !important;
+    color: var(--color-text-muted) !important;
+    text-align: center;
+    max-width: 850px !important;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* ── 3. Scroll-Reveal Cards — Glass-morphism ─────────────── */
+
+main.section .scroll-reveal {
+    background: rgba(255, 255, 255, 0.025);
+    border: 1px solid rgba(255, 184, 0, 0.1);
+    border-radius: 14px;
+    padding: 2.8rem 2.5rem;
+    backdrop-filter: blur(6px);
+    -webkit-backdrop-filter: blur(6px);
+    box-shadow:
+        0 2px 20px rgba(0, 0, 0, 0.25),
+        inset 0 1px 0 rgba(255, 255, 255, 0.03);
+    transition: border-color 0.35s ease, box-shadow 0.35s ease, transform 0.35s ease;
+    margin-bottom: 2.5rem;
+}
+
+main.section .scroll-reveal:hover {
+    border-color: rgba(255, 184, 0, 0.22);
+    box-shadow:
+        0 4px 30px rgba(255, 184, 0, 0.07),
+        0 2px 20px rgba(0, 0, 0, 0.3),
+        inset 0 1px 0 rgba(255, 255, 255, 0.04);
+    transform: translateY(-2px);
+}
+
+/* CTA section override — no card bg, no hover lift */
+main.section .scroll-reveal.text-center {
+    background: transparent;
+    border: none;
+    box-shadow: none;
+    backdrop-filter: none;
+    -webkit-backdrop-filter: none;
+    transform: none;
+}
+
+main.section .scroll-reveal.text-center:hover {
+    transform: none;
+    box-shadow: none;
+}
+
+/* ── 4. H2 Headings — Premium Accent ────────────────────── */
+
+main.section h2 {
+    border-left: 4px solid var(--color-gold);
+    padding-left: 1.2rem;
+    padding-top: 0.3rem;
+    padding-bottom: 0.5rem;
+    margin-top: 0.5rem;
+    margin-bottom: 1.4rem;
+    background: linear-gradient(
+        90deg,
+        rgba(255, 184, 0, 0.06) 0%,
+        transparent 70%
+    );
+    border-radius: 0 8px 8px 0;
+    position: relative;
+}
+
+/* Keep CTA h2 centered, no left border */
+main.section .text-center h2 {
+    border-left: none;
+    padding-left: 0;
+    background: none;
+    border-radius: 0;
+    color: var(--color-gold);
+    text-align: center;
+}
+
+/* ── 5. H3 Headings — Gold Dot Accent ───────────────────── */
+
+main.section h3 {
+    position: relative;
+    padding-left: 1.4rem;
+    margin-top: 2.2rem;
+    margin-bottom: 1rem;
+}
+
+main.section h3::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0.45em;
+    width: 8px;
+    height: 8px;
+    background: var(--color-gold);
+    border-radius: 50%;
+    box-shadow: 0 0 6px rgba(255, 184, 0, 0.4);
+}
+
+/* ── 6. Lists — Premium Styled ──────────────────────────── */
+
+main.section ul {
+    list-style: none;
+    padding-left: 0.5rem;
+    margin-bottom: 1.8rem;
+}
+
+main.section ul li {
+    position: relative;
+    padding: 0.7rem 1rem 0.7rem 2rem;
+    margin-bottom: 0.3rem;
+    color: var(--color-text-muted);
+    font-size: 1.05rem;
+    line-height: 1.75;
+    border-radius: 8px;
+    transition: background 0.25s ease;
+}
+
+main.section ul li:nth-child(odd) {
+    background: rgba(255, 255, 255, 0.015);
+}
+
+main.section ul li:nth-child(even) {
+    background: rgba(255, 184, 0, 0.015);
+}
+
+main.section ul li:hover {
+    background: rgba(255, 184, 0, 0.04);
+}
+
+main.section ul li::before {
+    content: '';
+    position: absolute;
+    left: 0.6rem;
+    top: 1em;
+    width: 7px;
+    height: 7px;
+    background: var(--color-gold);
+    transform: rotate(45deg);
+    box-shadow: 0 0 4px rgba(255, 184, 0, 0.3);
+}
+
+main.section ul li strong {
+    color: var(--color-text);
+    font-weight: 600;
+}
+
+/* ── 7. Blockquotes — Premium Gold Accent ────────────────── */
+
+main.section blockquote {
+    border-left: 4px solid var(--color-gold);
+    margin: 2rem 0;
+    padding: 1.5rem 2rem;
+    background: rgba(255, 184, 0, 0.03);
+    border-radius: 0 12px 12px 0;
+    font-style: italic;
+    color: var(--color-text-muted);
+    font-size: 1.1rem;
+    line-height: 1.8;
+    position: relative;
+}
+
+main.section blockquote::before {
+    content: '\201C';
+    position: absolute;
+    top: -0.2rem;
+    left: 0.8rem;
+    font-size: 3rem;
+    color: var(--color-gold);
+    opacity: 0.3;
+    font-family: var(--font-heading);
+    line-height: 1;
+}
+
+/* ── 8. Tables — Premium Dark Glass ─────────────────────── */
+
+main.section table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0;
+    margin: 2rem 0;
+    background: rgba(255, 255, 255, 0.02);
+    border: 1px solid rgba(255, 184, 0, 0.12);
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+}
+
+main.section thead tr {
+    border-bottom: 2px solid var(--color-gold) !important;
+}
+
+main.section th {
+    font-family: var(--font-heading);
+    font-weight: 700;
+    color: var(--color-gold);
+    padding: 1.1rem 1rem;
+    font-size: 0.95rem;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    background: linear-gradient(
+        180deg,
+        rgba(255, 184, 0, 0.1) 0%,
+        rgba(255, 184, 0, 0.04) 100%
+    );
+    text-align: left;
+}
+
+main.section td {
+    padding: 0.95rem 1rem;
+    color: var(--color-text-muted);
+    font-size: 0.95rem;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+    transition: background 0.2s ease;
+}
+
+main.section tbody tr:nth-child(even) {
+    background: rgba(255, 255, 255, 0.015);
+}
+
+main.section tbody tr:hover {
+    background: rgba(255, 184, 0, 0.04);
+}
+
+main.section tbody tr:hover td {
+    color: var(--color-text);
+}
+
+main.section tbody tr:last-child td {
+    border-bottom: none;
+    font-weight: 600;
+    color: var(--color-gold);
+}
+
+/* ── 9. CTA Section — Gold Gradient Strip ────────────────── */
+
+main.section .scroll-reveal.text-center {
+    position: relative;
+    padding: 3.5rem 2rem;
+    margin-top: 1.5rem;
+    text-align: center;
+}
+
+main.section .scroll-reveal.text-center::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60%;
+    max-width: 400px;
+    height: 1px;
+    background: linear-gradient(
+        90deg,
+        transparent,
+        var(--color-gold),
+        transparent
+    );
+}
+
+main.section .scroll-reveal.text-center h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+main.section .scroll-reveal.text-center p {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 650px;
+    margin-bottom: 2rem;
+    font-size: 1.1rem;
+}
+
+/* CTA Button Glow Pulse */
+@keyframes ctaPulse {
+    0%, 100% {
+        box-shadow: 0 0 15px rgba(255, 184, 0, 0.35);
+    }
+    50% {
+        box-shadow: 0 0 30px rgba(255, 184, 0, 0.55), 0 0 60px rgba(255, 184, 0, 0.15);
+    }
+}
+
+main.section .scroll-reveal.text-center .btn-gold {
+    animation: ctaPulse 3s ease-in-out infinite;
+    margin-top: 0.5rem;
+}
+
+main.section .scroll-reveal.text-center .btn-gold:hover {
+    animation: none;
+    box-shadow: 0 0 35px rgba(255, 184, 0, 0.65);
+}
+
+/* ── 10. Gold Links — Animated Underline ─────────────────── */
+
+.gold-link {
+    color: var(--color-gold);
+    text-decoration: none;
+    border-bottom: none;
+    position: relative;
+    transition: color 0.3s ease;
+}
+
+.gold-link::after {
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 0;
+    height: 1px;
+    background: linear-gradient(90deg, var(--color-gold), var(--color-gold-hover));
+    transition: width 0.35s ease;
+}
+
+.gold-link:hover {
+    color: var(--color-gold-hover);
+    border-bottom: none;
+}
+
+.gold-link:hover::after {
+    width: 100%;
+}
+
+/* ── 11. FAQ Page — Accordion-Style Cards ────────────────── */
+
+.faq-page .scroll-reveal h3 {
+    margin-top: 2rem;
+    padding: 1rem 1.2rem;
+    background: rgba(255, 184, 0, 0.04);
+    border-radius: 10px;
+    border-left: 3px solid var(--color-gold);
+    font-size: 1.25rem;
+    cursor: default;
+    transition: background 0.25s ease;
+}
+
+.faq-page .scroll-reveal h3::before {
+    display: none;
+}
+
+.faq-page .scroll-reveal h3:hover {
+    background: rgba(255, 184, 0, 0.07);
+}
+
+.faq-page .scroll-reveal h3:first-of-type {
+    margin-top: 0.5rem;
+    border-top: none;
+}
+
+.faq-page .scroll-reveal h3 + p {
+    padding: 0.8rem 1.2rem;
+    margin-top: -0.3rem;
+    border-left: 1px solid rgba(255, 184, 0, 0.1);
+    margin-left: 0.5rem;
+}
+
+/* ── 12. Stats & Prices — Standout Treatment ─────────────── */
+
+/* Make any inline strong containing currency/numbers pop */
+main.section p strong,
+main.section li strong {
+    color: var(--color-text);
+    font-weight: 700;
+}
+
+/* ── 13. Section Spacing & Flow ──────────────────────────── */
+
+main.section .scroll-reveal + .scroll-reveal {
+    margin-top: 0.5rem;
+}
+
+/* Add subtle divider between major content blocks */
+main.section .scroll-reveal:not(:last-child)::after {
+    content: '';
+    display: block;
+    width: 40px;
+    height: 0;
+    margin: 0 auto;
+}
+
+/* ── 14. Paragraph Readability Enhancements ──────────────── */
+
+main.section p {
+    font-size: 1.05rem;
+    line-height: 1.85;
+    color: var(--color-text-muted);
+    max-width: 800px;
+    margin-bottom: 1.3rem;
+}
+
+main.section .scroll-reveal p:last-of-type {
+    margin-bottom: 0.5rem;
+}
+
+/* ── 15. Staggered Card Reveal Animation ─────────────────── */
+
+@keyframes cardSlideIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+main.section .scroll-reveal:nth-child(2) { animation: cardSlideIn 0.6s 0.1s ease-out both; }
+main.section .scroll-reveal:nth-child(3) { animation: cardSlideIn 0.6s 0.2s ease-out both; }
+main.section .scroll-reveal:nth-child(4) { animation: cardSlideIn 0.6s 0.3s ease-out both; }
+main.section .scroll-reveal:nth-child(5) { animation: cardSlideIn 0.6s 0.4s ease-out both; }
+main.section .scroll-reveal:nth-child(6) { animation: cardSlideIn 0.6s 0.5s ease-out both; }
+main.section .scroll-reveal:nth-child(7) { animation: cardSlideIn 0.6s 0.6s ease-out both; }
+main.section .scroll-reveal:nth-child(8) { animation: cardSlideIn 0.6s 0.7s ease-out both; }
+main.section .scroll-reveal:nth-child(9) { animation: cardSlideIn 0.6s 0.8s ease-out both; }
+main.section .scroll-reveal:nth-child(10) { animation: cardSlideIn 0.6s 0.9s ease-out both; }
+
+/* ── 16. Mobile Responsive Overrides ─────────────────────── */
+
+@media (max-width: 768px) {
+    main.section:not(.hero) .container > .page-h1 {
+        padding: 1.8rem 1.2rem 1.5rem;
+        font-size: 2rem;
+        border-radius: 12px;
+    }
+
+    main.section:not(.hero) .container > p:first-of-type {
+        padding: 1rem 1.2rem;
+        font-size: 1rem !important;
+    }
+
+    main.section .scroll-reveal {
+        padding: 1.8rem 1.4rem;
+        border-radius: 12px;
+        margin-bottom: 2rem;
+    }
+
+    main.section .scroll-reveal:hover {
+        transform: none;
+    }
+
+    main.section h2 {
+        font-size: 1.5rem;
+        padding-left: 1rem;
+    }
+
+    main.section h3 {
+        font-size: 1.2rem;
+        padding-left: 1.2rem;
+    }
+
+    main.section ul li {
+        padding: 0.6rem 0.8rem 0.6rem 1.8rem;
+        font-size: 0.95rem;
+    }
+
+    main.section blockquote {
+        padding: 1.2rem 1.2rem;
+        font-size: 1rem;
+    }
+
+    main.section .scroll-reveal.text-center {
+        padding: 2.5rem 1.2rem;
+    }
+
+    main.section .scroll-reveal.text-center h2 {
+        font-size: 1.6rem;
+    }
+
+    main.section th,
+    main.section td {
+        padding: 0.7rem 0.6rem;
+        font-size: 0.85rem;
+    }
+
+    .faq-page .scroll-reveal h3 {
+        padding: 0.8rem 1rem;
+        font-size: 1.1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    main.section:not(.hero) .container > .page-h1 {
+        padding: 1.4rem 1rem 1.2rem;
+        font-size: 1.65rem;
+    }
+
+    main.section:not(.hero) .container > p:first-of-type {
+        padding: 0.8rem 1rem;
+        font-size: 0.95rem !important;
+    }
+
+    main.section .scroll-reveal {
+        padding: 1.3rem 1.1rem;
+        border-radius: 10px;
+    }
+
+    main.section h2 {
+        font-size: 1.3rem;
+        padding-left: 0.8rem;
+        border-left-width: 3px;
+    }
+
+    main.section h3 {
+        font-size: 1.1rem;
+        padding-left: 1.1rem;
+    }
+
+    main.section h3::before {
+        width: 6px;
+        height: 6px;
+    }
+
+    main.section ul li {
+        padding: 0.5rem 0.6rem 0.5rem 1.6rem;
+    }
+
+    main.section ul li::before {
+        width: 6px;
+        height: 6px;
+        left: 0.4rem;
+    }
+
+    main.section .scroll-reveal.text-center {
+        padding: 2rem 1rem;
+    }
+
+    main.section .scroll-reveal.text-center::before {
+        width: 80%;
+    }
+
+    main.section table {
+        font-size: 0.85rem;
+    }
+
+    main.section th {
+        padding: 0.7rem 0.5rem;
+        font-size: 0.75rem;
+        letter-spacing: 0.5px;
+    }
+
+    main.section td {
+        padding: 0.6rem 0.5rem;
+        font-size: 0.8rem;
+    }
+}

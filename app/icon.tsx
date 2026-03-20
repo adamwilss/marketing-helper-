@@ -20,9 +20,10 @@ export default function Icon() {
           background: 'transparent',
         }}
       >
-        <svg viewBox="0 0 24 24" width="28" height="28" stroke="#FFB800" fill="none" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
-          <path d="M17 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2z"></path>
-          <path d="M17 3v10"></path>
+        <svg viewBox="0 0 24 24" width="24" height="24" fill="#FFB800">
+          <path d="M7 2h8c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H7c-1.1 0-2-.9-2-2V4c0-1.1.9-2 2-2z" />
+          <path d="M17 5h2c.6 0 1 .4 1 1v4c0 .6-.4 1-1 1h-2" />
+          <path d="M5 18h10v2H5z" opacity="0.6" />
         </svg>
       </div>
     ),

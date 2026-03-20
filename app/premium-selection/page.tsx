@@ -65,7 +65,7 @@ export default function PremiumSelection() {
           <details className="drinks-category scroll-reveal">
             <summary className="category-header">
               <h3 className="category-title">
-                <span className="collapse-arrow">▶</span> 🍺 Premium Draught
+                <span className="collapse-arrow">▶</span> ✓ Premium Draught
               </h3>
               <p className="category-desc">Fresh, cold, poured properly</p>
             </summary>
@@ -79,7 +79,7 @@ export default function PremiumSelection() {
                 <div className="drink-item">Cruz Campo</div>
                 <div className="drink-item">Damn Lemon</div>
                 <div className="drink-item drink-item--featured">Moretti</div>
-                <div className="drink-item drink-item--featured">Murphy&apos;s Neck Oil</div>
+                <div className="drink-item drink-item--featured">Murphy&apos;s</div>
                 <div className="drink-item">Peroni Zero</div>
                 <div className="drink-item">Stella</div>
               </div>
@@ -99,7 +99,7 @@ export default function PremiumSelection() {
           <details className="drinks-category scroll-reveal">
             <summary className="category-header">
               <h3 className="category-title">
-                <span className="collapse-arrow">▶</span> 🥃 Premium Spirits
+                <span className="collapse-arrow">▶</span> ✓ Premium Spirits
               </h3>
               <p className="category-desc">Top-shelf selection across all spirit categories</p>
             </summary>
@@ -161,7 +161,7 @@ export default function PremiumSelection() {
           <details className="drinks-category scroll-reveal">
             <summary className="category-header">
               <h3 className="category-title">
-                <span className="collapse-arrow">▶</span> 🍷 Wines
+                <span className="collapse-arrow">▶</span> ✓ Wines
               </h3>
               <p className="category-desc">Reds, whites, rosés &amp; sparkling</p>
             </summary>
@@ -184,18 +184,11 @@ export default function PremiumSelection() {
               </div>
             </div>
 
-            {/* Rosé */}
+            {/* Other */}
             <div className="drinks-subcategory">
-              <h4 className="subcategory-title">Rosé</h4>
+              <h4 className="subcategory-title">Other</h4>
               <div className="drinks-grid-category">
                 <div className="drink-item">Rosé</div>
-              </div>
-            </div>
-
-            {/* Sparkling */}
-            <div className="drinks-subcategory">
-              <h4 className="subcategory-title">Sparkling</h4>
-              <div className="drinks-grid-category">
                 <div className="drink-item">Prosecco</div>
               </div>
             </div>
@@ -205,7 +198,7 @@ export default function PremiumSelection() {
           <details className="drinks-category scroll-reveal">
             <summary className="category-header">
               <h3 className="category-title">
-                <span className="collapse-arrow">▶</span> 🥤 Soft Drinks &amp; Mixers
+                <span className="collapse-arrow">▶</span> ✓ Soft Drinks &amp; Mixers
               </h3>
               <p className="category-desc">Premium mixers &amp; alcohol-free options</p>
             </summary>
@@ -228,7 +221,7 @@ export default function PremiumSelection() {
           </div>
           <div className="carousel-wrapper scroll-reveal">
             <div className="carousel-track">
-              <div className="carousel-item">Murphy's Neck Oil</div>
+              <div className="carousel-item">Murphy's</div>
               <div className="carousel-item">Rosé</div>
               <div className="carousel-item">Jameson</div>
               <div className="carousel-item">Moretti</div>
@@ -241,7 +234,7 @@ export default function PremiumSelection() {
               <div className="carousel-item">Beefeater</div>
               <div className="carousel-item">Shiraz</div>
               {/* Duplicate for seamless loop */}
-              <div className="carousel-item">Murphy's Neck Oil</div>
+              <div className="carousel-item">Murphy's</div>
               <div className="carousel-item">Rosé</div>
               <div className="carousel-item">Jameson</div>
               <div className="carousel-item">Moretti</div>

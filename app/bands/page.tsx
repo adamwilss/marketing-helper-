@@ -20,19 +20,9 @@ export default function Bands() {
             </p>
           </div>
 
-          <div style={{ background: 'rgba(255,255,255,0.05)', padding: '1.5rem', borderRadius: '8px', marginBottom: '1.5rem', borderLeft: '4px solid #c8a951' }}>
-            <h3>Velvet Thunder</h3>
-            <p>
-              If you love Britpop and 90s rock, Velvet Thunder will feel like coming home. This band specialises in recreating the raw, visceral energy of 90s live music &mdash; think Oasis at Maine Road, Blur at Mile End, Pulp at Glastonbury. Their setlists are crafted to build energy throughout the night, starting with the classics and building to a euphoric finale that leaves you breathless. Perfect for <a href="/britpop-lovers" className="gold-link">Britpop lovers</a> and <a href="/90s-nostalgia" className="gold-link">90s nostalgia</a> seekers.
-            </p>
-          </div>
-
-          <div style={{ background: 'rgba(255,255,255,0.05)', padding: '1.5rem', borderRadius: '8px', marginBottom: '1.5rem', borderLeft: '4px solid #c8a951' }}>
-            <h3>Electric Rebels</h3>
-            <p>
-              For those who want their rock with a modern edge. Electric Rebels blend contemporary indie with classic rock energy, delivering a show that appeals to multiple generations of music fans. Their tight musicianship and dynamic stage presence make them a perfect fit for the intimate Rock &amp; Pour setting. Whether you&rsquo;re an <a href="/indie-music-fans" className="gold-link">indie music fan</a> or a <a href="/rock-music-fans" className="gold-link">rock devotee</a>, Electric Rebels deliver.
-            </p>
-          </div>
+          <p style={{ color: '#A0A0A0', fontStyle: 'italic', marginTop: '1rem' }}>
+            More bands to be announced soon. Follow our <a href="/events" className="gold-link">events page</a> for updates on upcoming acts.
+          </p>
         </section>
 
         <section className="scroll-reveal" style={{ marginBottom: '3rem' }}>

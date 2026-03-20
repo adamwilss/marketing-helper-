@@ -7,18 +7,6 @@ const events = [
     bandName: 'Steven and the Holy Heathens',
     date: 'April 10',
     soldOut: false
-  },
-  {
-    id: 2,
-    bandName: 'Velvet Thunder',
-    date: 'May 15',
-    soldOut: false
-  },
-  {
-    id: 3,
-    bandName: 'Electric Rebels',
-    date: 'June 20',
-    soldOut: true
   }
 ];
 

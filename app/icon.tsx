@@ -12,17 +12,18 @@ export default function Icon() {
     (
       <div
         style={{
-          fontSize: 24,
-          background: '#FFB800',
           width: '100%',
           height: '100%',
           display: 'flex',
           alignItems: 'center',
           justifyContent: 'center',
-          borderRadius: 4,
+          background: 'transparent',
         }}
       >
-        🍺
+        <svg viewBox="0 0 24 24" width="28" height="28" stroke="#FFB800" fill="none" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
+          <path d="M17 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2z"></path>
+          <path d="M17 3v10"></path>
+        </svg>
       </div>
     ),
     { ...size },

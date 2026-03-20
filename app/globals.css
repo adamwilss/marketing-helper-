@@ -3088,3 +3088,287 @@ details[open] .collapse-arrow {
         padding: 0.8rem 1.5rem;
     }
 }
+
+/* ── SEO Pages Styling ────────────────────────────── */
+
+/* Page H1 — large, gold, serif, centered with subtle gold divider underneath */
+.page-h1 {
+    font-family: var(--font-heading);
+    font-size: 3rem;
+    font-weight: 700;
+    color: var(--color-gold);
+    text-align: center;
+    line-height: 1.2;
+    margin-bottom: 1.5rem;
+    padding-bottom: 1.5rem;
+    position: relative;
+}
+
+.page-h1::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80px;
+    height: 2px;
+    background: linear-gradient(to right, transparent, var(--color-gold), transparent);
+}
+
+/* Page subtitle */
+.page-subtitle {
+    font-family: var(--font-body);
+    font-size: 1.15rem;
+    color: var(--color-text-muted);
+    text-align: center;
+    max-width: 700px;
+    margin: 0 auto 2.5rem;
+    line-height: 1.7;
+}
+
+/* Ensure content doesn't hide behind fixed navbar */
+.about-page.section,
+.faq-page.section,
+.pricing-page.section,
+main.section:not(.hero) {
+    padding-top: 10rem;
+    padding-bottom: 6rem;
+}
+
+/* H2 — gold accent with left border */
+main.section h2 {
+    font-family: var(--font-heading);
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--color-text);
+    margin-bottom: 1.2rem;
+    padding-bottom: 0.6rem;
+    padding-left: 1rem;
+    border-left: 3px solid var(--color-gold);
+    position: relative;
+}
+
+/* Text-center CTA sections should not have left border */
+main.section .text-center h2 {
+    border-left: none;
+    padding-left: 0;
+    color: var(--color-gold);
+    text-align: center;
+}
+
+/* H3 — lighter, slightly smaller */
+main.section h3 {
+    font-family: var(--font-heading);
+    font-size: 1.35rem;
+    font-weight: 600;
+    color: var(--color-text);
+    margin-top: 2rem;
+    margin-bottom: 0.8rem;
+}
+
+/* Paragraphs — readable with muted color */
+main.section p {
+    font-family: var(--font-body);
+    color: var(--color-text-muted);
+    font-size: 1.05rem;
+    line-height: 1.8;
+    max-width: 800px;
+    margin-bottom: 1.2rem;
+}
+
+/* Center intro paragraphs that have inline centering styles */
+main.section .container > p {
+    text-align: center;
+}
+
+/* Section paragraphs inside scroll-reveal should be left-aligned */
+main.section .scroll-reveal p {
+    text-align: left;
+}
+
+/* Lists — gold bullet styling */
+main.section ul {
+    list-style: none;
+    padding-left: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+main.section ul li {
+    position: relative;
+    padding-left: 1.2rem;
+    margin-bottom: 0.6rem;
+    color: var(--color-text-muted);
+    font-size: 1.05rem;
+    line-height: 1.8;
+}
+
+main.section ul li::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0.65em;
+    width: 6px;
+    height: 6px;
+    background: var(--color-gold);
+    transform: rotate(45deg);
+}
+
+main.section ul li strong {
+    color: var(--color-text);
+}
+
+/* Scroll-reveal sections — spacing and subtle card-like feel */
+main.section .scroll-reveal {
+    background: rgba(255, 255, 255, 0.02);
+    border: 1px solid rgba(255, 184, 0, 0.08);
+    border-radius: 8px;
+    padding: 2.5rem;
+    transition: border-color 0.3s ease;
+}
+
+main.section .scroll-reveal:hover {
+    border-color: rgba(255, 184, 0, 0.18);
+}
+
+/* CTA section at bottom should be transparent */
+main.section .scroll-reveal.text-center {
+    background: transparent;
+    border: none;
+    text-align: center;
+}
+
+main.section .scroll-reveal.text-center p {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Tables — dark background with gold header row borders */
+main.section table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 1.5rem 0;
+    background: rgba(255, 255, 255, 0.02);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+main.section thead tr {
+    border-bottom: 2px solid var(--color-gold) !important;
+}
+
+main.section th {
+    font-family: var(--font-heading);
+    font-weight: 700;
+    color: var(--color-gold);
+    padding: 1rem 0.75rem;
+    font-size: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    background: rgba(255, 184, 0, 0.06);
+}
+
+main.section td {
+    padding: 0.85rem 0.75rem;
+    color: var(--color-text-muted);
+    font-size: 0.95rem;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+main.section tbody tr:hover {
+    background: rgba(255, 184, 0, 0.03);
+}
+
+main.section tbody tr:last-child td {
+    border-bottom: 2px solid var(--color-gold);
+    color: var(--color-text);
+}
+
+/* FAQ page — better spacing between Q&A pairs */
+.faq-page h3 {
+    margin-top: 2.5rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.faq-page .scroll-reveal h3:first-of-type {
+    margin-top: 0.5rem;
+    padding-top: 0;
+    border-top: none;
+}
+
+/* ── SEO Pages — Mobile Responsive ────────────────── */
+
+@media (max-width: 768px) {
+    .page-h1 {
+        font-size: 2rem;
+        padding-bottom: 1.2rem;
+        margin-bottom: 1.2rem;
+    }
+
+    .page-subtitle {
+        font-size: 1rem;
+    }
+
+    .about-page.section,
+    .faq-page.section,
+    .pricing-page.section,
+    main.section:not(.hero) {
+        padding-top: 7rem;
+        padding-bottom: 4rem;
+    }
+
+    main.section h2 {
+        font-size: 1.55rem;
+    }
+
+    main.section h3 {
+        font-size: 1.2rem;
+    }
+
+    main.section p {
+        font-size: 0.95rem;
+    }
+
+    main.section ul li {
+        font-size: 0.95rem;
+    }
+
+    main.section .scroll-reveal {
+        padding: 1.5rem;
+        margin-bottom: 2rem !important;
+    }
+
+    main.section th,
+    main.section td {
+        padding: 0.6rem 0.5rem;
+        font-size: 0.8rem;
+    }
+
+    main.section th {
+        letter-spacing: 0;
+    }
+}
+
+@media (max-width: 480px) {
+    .page-h1 {
+        font-size: 1.65rem;
+    }
+
+    .about-page.section,
+    .faq-page.section,
+    .pricing-page.section,
+    main.section:not(.hero) {
+        padding-top: 6rem;
+        padding-bottom: 3rem;
+    }
+
+    main.section .scroll-reveal {
+        padding: 1.2rem;
+    }
+
+    main.section h2 {
+        font-size: 1.35rem;
+        padding-left: 0.8rem;
+    }
+}

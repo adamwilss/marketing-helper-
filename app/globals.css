@@ -376,7 +376,7 @@ a {
     inset: -30px; /* overscan so blur doesn't clip at edges */
     z-index: 1;
     pointer-events: none;
-    opacity: 0.6;
+    opacity: 0.22;
     filter: blur(18px); /* smooths low-res canvas pixels into soft atmospheric haze */
 }
 

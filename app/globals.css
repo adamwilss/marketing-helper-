@@ -489,10 +489,28 @@ a {
     line-height: 0;
 }
 
+.hero-crowd::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 90%;
+    height: 65%;
+    background: radial-gradient(ellipse at 50% 100%,
+        rgba(255, 160, 40, 0.32) 0%,
+        rgba(255, 100, 0, 0.14) 45%,
+        transparent 72%);
+    z-index: 0;
+    pointer-events: none;
+}
+
 .hero-crowd img {
     width: 100%;
     height: auto;
     display: block;
+    position: relative;
+    z-index: 1;
     mix-blend-mode: multiply;
     opacity: 1;
     filter: brightness(1.15);

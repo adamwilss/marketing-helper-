@@ -27,7 +27,7 @@ export const metadata: Metadata = {
     type: "website",
     images: [
       {
-        url: "/POSTER.png",
+        url: "/POSTER.webp",
         width: 520,
         height: 737,
         alt: "Rock & Pour — Live Music & All-Inclusive Drinks at The Bowdon Rooms",
@@ -39,7 +39,7 @@ export const metadata: Metadata = {
     title: "Rock & Pour | Live Rock Music & Premium Drinks Night at The Bowdon Rooms",
     description:
       "Rock & Pour is a premium live music and drinks experience at The Bowdon Rooms in Manchester. Enjoy live rock bands with included premium drinks.",
-    images: ["/POSTER.png"],
+    images: ["/POSTER.webp"],
   },
 };
 
@@ -93,9 +93,10 @@ export default function RootLayout({
     <html lang="en">
       <head>
         <meta name="google-site-verification" content="qgMgazHhO3cFsLm_X6377LjIGZBp45KAXqD6pE_VGvM" />
+        <link rel="dns-prefetch" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
-        <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@300;400;600;700&family=Playfair+Display:ital,wght@0,400;0,600;0,700;0,900;1,400&display=swap" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@400;600;700&family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400&display=swap" rel="stylesheet" />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}

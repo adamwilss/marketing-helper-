@@ -167,6 +167,7 @@ export default function Home() {
                   src="/drinks-img.webp"
                   alt="Premium drinks at Rock & Pour"
                   fill
+                  priority
                   style={{ objectFit: 'cover' }}
                   sizes="(max-width: 768px) 100vw, 50vw"
                 />
@@ -301,6 +302,7 @@ export default function Home() {
                   className="event-poster"
                   width={520}
                   height={737}
+                  loading="lazy"
                   style={{ width: '100%', height: '100%' }}
                 />
               </div>
@@ -314,6 +316,7 @@ export default function Home() {
                   className="event-poster"
                   width={520}
                   height={737}
+                  loading="lazy"
                   style={{ width: '100%', height: '100%' }}
                 />
               </div>
@@ -331,7 +334,7 @@ export default function Home() {
         <div className="container">
           <div className="footer-grid">
             <div className="footer-brand">
-              <img src="/title-logo-transparent.webp" alt="ROCK & POUR" className="footer-logo-img" />
+              <img src="/title-logo-transparent.webp" alt="ROCK & POUR" className="footer-logo-img" loading="lazy" />
               <p>Live music. All-inclusive drinks. A room full of people there for a proper night out.</p>
             </div>
             <div className="footer-links">

@@ -108,7 +108,7 @@ export default function RootLayout({
       </head>
       <body className="antialiased">
         <div className="site-smoke">
-          <SmokeBackground smokeColor="#9A5000" />
+          <SmokeBackground smokeColor="#CC4400" />
         </div>
         <Navbar />
         <ScrollRevealInit />

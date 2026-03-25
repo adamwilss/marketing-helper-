@@ -24,11 +24,15 @@ void main(){
   float n=fbm(uv*.28-vec2(T*.01,0));
   float smoke=fbm(uv+vec2(0,T*.015)+n*2.);
 
-  // Threshold + soften edges — always warm amber, never coloured artifacts
-  float alpha=clamp((smoke-0.28)*2.2,0.,1.);
+  // Smooth wispy alpha — no hard threshold so no jagged edges
+  float alpha=smoothstep(0.1,0.85,smoke)*0.9;
   alpha*=min(time*.12,1.);
 
-  O=vec4(u_color,alpha*0.75);
+  // Fire colour: deep red-orange in thin wisps, bright amber in dense areas
+  vec3 ember=vec3(0.65,0.1,0.0);
+  vec3 col=mix(ember,u_color,smoothstep(0.2,0.8,smoke));
+
+  O=vec4(col,alpha);
 }`;
 
 class Renderer {

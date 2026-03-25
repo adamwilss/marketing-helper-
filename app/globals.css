@@ -1481,6 +1481,19 @@ a {
     color: #FFC933;
 }
 
+.phone-link {
+    color: var(--color-gold);
+    text-decoration: underline;
+    font-weight: 700;
+    cursor: pointer;
+    transition: var(--transition);
+}
+
+.phone-link:hover {
+    color: #FFC933;
+    text-decoration: underline;
+}
+
 /* Terry's Story Section */
 .terrys-story {
     background: linear-gradient(160deg, #0a0804 0%, var(--color-bg) 100%);

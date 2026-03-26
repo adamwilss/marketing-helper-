@@ -116,6 +116,12 @@ export default function RootLayout({
   return (
     <html lang="en" className={`${bebasNeue.variable} ${montserrat.variable} ${playfairDisplay.variable}`}>
       <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover, maximum-scale=5" />
+        <meta name="mobile-web-app-capable" content="yes" />
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+        <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+        <meta name="theme-color" content="#050505" />
         <meta name="google-site-verification" content="qgMgazHhO3cFsLm_X6377LjIGZBp45KAXqD6pE_VGvM" />
         <link rel="preload" href="/title-logo-transparent.webp" as="image" />
         <script

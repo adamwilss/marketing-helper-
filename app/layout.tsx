@@ -116,7 +116,7 @@ export default function RootLayout({
   return (
     <html lang="en" className={`${bebasNeue.variable} ${montserrat.variable} ${playfairDisplay.variable}`}>
       <head>
-        <meta charset="utf-8" />
+        <meta charSet="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover, maximum-scale=5" />
         <meta name="mobile-web-app-capable" content="yes" />
         <meta name="apple-mobile-web-app-capable" content="yes" />

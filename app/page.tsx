@@ -90,15 +90,13 @@ export default function Home() {
 
           {/* Benefit-Led Headline */}
           <h2 className="hero-headline fade-up">
-            Most nights end at <span className="cost-highlight">£100+</span>
+            MOST NIGHTS END AT <span className="cost-highlight">£100+</span>
             <br />
-            Rock &amp; Pour is <span className="gold-price">£55</span>
-            <br />
-            Everything included.
+            BOWDON'S BOTTOMLESS BAR &amp; BAND NIGHT IS <span className="gold-price">£55</span>
           </h2>
 
           <h3 className="hero-subtitle fade-up delay-1">
-            One band. Unlimited drinks. One venue. One price.
+            Everything included. One night. No regrets.
           </h3>
 
           <div className="hero-title-img fade-up delay-2">

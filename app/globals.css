@@ -697,6 +697,31 @@ a {
     text-shadow: 0 0 30px rgba(255, 184, 0, 0.5);
 }
 
+/* Hero Brand — Top */
+.hero-brand {
+    font-family: var(--font-heading);
+    font-size: clamp(1rem, 3vw, 1.4rem);
+    font-weight: 700;
+    letter-spacing: 3px;
+    color: var(--color-gold);
+    text-transform: uppercase;
+    margin-bottom: 1.5rem;
+    text-shadow: 0 0 20px rgba(255, 184, 0, 0.3);
+}
+
+/* Alliterative Name — Featured & Big */
+.hero-subname-featured {
+    font-family: var(--font-heading);
+    font-size: clamp(1.8rem, 7vw, 3.5rem);
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    color: var(--color-text);
+    text-transform: capitalize;
+    margin-top: 2rem;
+    line-height: 1.25;
+    text-shadow: 0 2px 10px rgba(0, 0, 0, 0.4);
+}
+
 .hero-subname {
     display: block;
     font-size: 0.65em;
@@ -1447,10 +1472,20 @@ a {
         padding-top: 70px;
     }
 
+    .hero-brand {
+        font-size: clamp(0.9rem, 2.5vw, 1.2rem);
+        margin-bottom: 1rem;
+    }
+
     .hero-headline {
-        font-size: clamp(1.2rem, 4.5vw, 1.75rem);
+        font-size: clamp(1.1rem, 4vw, 1.6rem);
         margin-bottom: 1.5rem;
         line-height: 1.35;
+    }
+
+    .hero-subname-featured {
+        font-size: clamp(1.3rem, 5vw, 2.4rem);
+        margin-top: 1.5rem;
     }
 
     .hero-subname {

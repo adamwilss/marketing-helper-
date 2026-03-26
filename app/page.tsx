@@ -88,19 +88,21 @@ export default function Home() {
         <div className="hero-content">
           <h1 className="hero-h1 fade-up">Rock &amp; Pour — All-Inclusive Live Music &amp; Premium Drinks Night in Manchester</h1>
 
+          {/* Brand at Top */}
+          <div className="hero-brand fade-up">ROCK &amp; POUR</div>
+
           {/* Benefit-Led Headline */}
-          <h2 className="hero-headline fade-up">
+          <h2 className="hero-headline fade-up delay-1">
             MOST NIGHTS END AT <span className="cost-highlight">£100+</span>
             <br />
             ROCK &amp; POUR IS <span className="gold-price">£55</span>
             <br />
             EVERYTHING INCLUDED
-            <br />
-            <span className="hero-subname">Bowdon's Bottomless Bar &amp; Band Night</span>
           </h2>
 
-          <h3 className="hero-subtitle fade-up delay-1">
-            One night. No regrets.
+          {/* Alliterative Name — Big & Bold */}
+          <h3 className="hero-subname-featured fade-up delay-2">
+            Bowdon's Bottomless Bar &amp; Band Night
           </h3>
 
           <div className="hero-title-img fade-up delay-2">

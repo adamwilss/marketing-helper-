@@ -59,7 +59,7 @@ export default function Home() {
     const pc = document.getElementById('hero-particles');
     if (!pc) return;
     pc.innerHTML = '';
-    for (let i = 0; i < 8; i++) {
+    for (let i = 0; i < 4; i++) {
       const p = document.createElement('div');
       p.className = 'particle';
       const size = Math.random() * 9 + 3;

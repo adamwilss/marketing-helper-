@@ -4,7 +4,6 @@ import "./globals.css";
 import { Analytics } from "@vercel/analytics/next";
 import { SpeedInsights } from "@vercel/speed-insights/next";
 import { Navbar } from "@/components/ui/navbar";
-import { SmokeBackground } from "@/components/ui/spooky-smoke-animation";
 import { ScrollRevealInit } from "@/components/ui/scroll-reveal-init";
 import { Bebas_Neue, Montserrat, Playfair_Display } from "next/font/google";
 
@@ -124,9 +123,6 @@ export default function RootLayout({
         />
       </head>
       <body className="antialiased">
-        <div className="site-smoke">
-          <SmokeBackground smokeColor="#B87800" />
-        </div>
         <Navbar />
         <ScrollRevealInit />
         {children}

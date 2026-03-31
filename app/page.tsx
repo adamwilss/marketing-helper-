@@ -75,6 +75,11 @@ export default function Home() {
   return (
     <>
 
+      {/* Cancellation Banner */}
+      <div className="cancellation-banner">
+        <p>⚠️ IMPORTANT NOTICE: Due to unforeseen circumstances, the April 10th event has been cancelled. We sincerely apologise. Please contact the box office on <a href="tel:01619268992" className="phone-link">0161 926 8992</a> regarding refunds.</p>
+      </div>
+
       {/* Hero Section */}
       <header className="hero" id="hero">
         <div className="hero-overlay"></div>

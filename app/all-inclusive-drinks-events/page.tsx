@@ -47,7 +47,7 @@ export default function AllInclusiveDrinks() {
             <li><strong>No bar queue stress:</strong> Wristband service means fast, simple ordering.</li>
           </ul>
           <p>
-            This is why Rock &amp; Pour is the top choice for <a href="/birthday-celebration-ideas" className="gold-link">birthdays</a>, <a href="/birthday-celebration-ideas" className="gold-link">stag dos</a>, <a href="/birthday-celebration-ideas" className="gold-link">hen parties</a>, <a href="/corporate-events" className="gold-link">corporate events</a>, and <a href="/birthday-celebration-ideas" className="gold-link">reunions</a>.
+            This is why Rock &amp; Pour is the top choice for <a href="/birthday-celebration-ideas" className="gold-link">birthdays</a>, stag dos, hen parties, <a href="/corporate-events" className="gold-link">corporate events</a>, and reunions.
           </p>
         </section>
 
@@ -57,7 +57,7 @@ export default function AllInclusiveDrinks() {
             On a <a href="/how-to-budget-night-out" className="gold-link">normal night out</a>, you might spend &pound;60&ndash;&pound;120+ on drinks alone, with no entertainment. At a <a href="/all-inclusive-drinks-events" className="gold-link">nightclub</a>, drinks are &pound;7&ndash;&pound;12 each plus entry fees. On a <a href="/all-inclusive-drinks-events" className="gold-link">pub crawl</a>, costs mount with every stop. Rock &amp; Pour&rsquo;s &pound;55 all-inclusive beats them all &mdash; and includes a <a href="/indie-rock-night" className="gold-link">live band</a>. Read our <a href="/how-to-budget-night-out" className="gold-link">budgeting guide</a> for the detailed comparison.
           </p>
           <p>
-            Located near <a href="/best-manchester-venues" className="gold-link">Manchester</a>, <a href="/cheshire-events" className="gold-link">Altrincham</a>, <a href="/warrington-nights-out" className="gold-link">Warrington</a>, and <a href="/cheshire-events" className="gold-link">Cheshire</a>. Check <a href="/" className="gold-link">upcoming events</a>. First time? Read the <a href="/first-time-guide" className="gold-link">first-time guide</a> and <a href="/first-time-guide" className="gold-link">FAQ</a>.
+            Located near <a href="/best-manchester-venues" className="gold-link">Manchester</a>, <a href="/cheshire-events" className="gold-link">Altrincham</a>, <a href="/warrington-nights-out" className="gold-link">Warrington</a>, and <a href="/cheshire-events" className="gold-link">Cheshire</a>. Check <a href="/" className="gold-link">upcoming events</a>. First time? Read the <a href="/first-time-guide" className="gold-link">first-time guide</a> and FAQ.
           </p>
         </section>
 

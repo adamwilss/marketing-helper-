@@ -78,7 +78,7 @@ export default function CorporateEvents() {
             The best thing about choosing Rock &amp; Pour for your corporate event is how little effort it requires from whoever is organising it. There&rsquo;s no venue to research, no menu to choose, no drinks package to negotiate. You book tickets through our <a href="/" className="gold-link">events page</a> or call us directly, share the details with your team, and everything else is handled. Read our <a href="/birthday-celebration-ideas" className="gold-link">party planning guide</a> for additional tips.
           </p>
           <p>
-            Located at <a href="/" className="gold-link">The Bowdon Rooms</a> in Bowdon, near <a href="/cheshire-events" className="gold-link">Altrincham</a>, it&rsquo;s easily accessible from Manchester city centre, <a href="/warrington-nights-out" className="gold-link">Warrington</a>, and across <a href="/cheshire-events" className="gold-link">Cheshire</a>. First time? Our <a href="/first-time-guide" className="gold-link">first-time guide</a> covers everything you need to know, and the <a href="/first-time-guide" className="gold-link">FAQ</a> answers the most common questions.
+            Located at <a href="/" className="gold-link">The Bowdon Rooms</a> in Bowdon, near <a href="/cheshire-events" className="gold-link">Altrincham</a>, it&rsquo;s easily accessible from Manchester city centre, <a href="/warrington-nights-out" className="gold-link">Warrington</a>, and across <a href="/cheshire-events" className="gold-link">Cheshire</a>. First time? Our <a href="/first-time-guide" className="gold-link">first-time guide</a> covers everything you need to know, and the FAQ answers the most common questions.
           </p>
         </section>
 

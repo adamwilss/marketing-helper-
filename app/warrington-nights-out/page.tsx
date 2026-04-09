@@ -53,13 +53,13 @@ export default function WarringtonNights() {
           </p>
           <ul style={{ lineHeight: '2', paddingLeft: '1.5rem' }}>
             <li><a href="/birthday-celebration-ideas" className="gold-link">Birthday celebrations</a> &mdash; better than any Warrington venue</li>
-            <li><a href="/birthday-celebration-ideas" className="gold-link">Stag dos</a> &amp; <a href="/birthday-celebration-ideas" className="gold-link">hen parties</a> &mdash; all-inclusive and unforgettable</li>
+            <li>Stag dos &amp; hen parties &mdash; all-inclusive and unforgettable</li>
             <li><a href="/corporate-events" className="gold-link">Corporate events</a> &amp; <a href="/team-building-events" className="gold-link">team building</a> &mdash; Warrington businesses love the easy format</li>
-            <li><a href="/birthday-celebration-ideas" className="gold-link">Date nights</a> &mdash; something refreshingly different for Warrington couples</li>
-            <li><a href="/team-building-events" className="gold-link">Group nights out</a> &mdash; <a href="/birthday-celebration-ideas" className="gold-link">girls&rsquo; nights</a>, <a href="/birthday-celebration-ideas" className="gold-link">lads&rsquo; nights</a>, <a href="/birthday-celebration-ideas" className="gold-link">reunions</a></li>
+            <li>Date nights &mdash; something refreshingly different for Warrington couples</li>
+            <li><a href="/team-building-events" className="gold-link">Group nights out</a> &mdash; girls&rsquo; nights, lads&rsquo; nights, reunions</li>
           </ul>
           <p>
-            For <a href="/birthday-celebration-ideas" className="gold-link">group night out ideas</a> and <a href="/birthday-celebration-ideas" className="gold-link">party planning tips</a>, our dedicated guides have you covered.
+            For <a href="/birthday-celebration-ideas" className="gold-link">group night out ideas</a> and party planning tips, our dedicated guides have you covered.
           </p>
         </section>
 
@@ -69,7 +69,7 @@ export default function WarringtonNights() {
             Rock &amp; Pour is the <a href="/all-inclusive-drinks-events" className="gold-link">alternative to nightclubs</a> and boring bar crawls that Warrington residents have been looking for. It&rsquo;s a step up from a <a href="/all-inclusive-drinks-events" className="gold-link">pub crawl</a>, leagues ahead of a <a href="/all-inclusive-drinks-events" className="gold-link">nightclub</a>, and more memorable than any <a href="/how-to-budget-night-out" className="gold-link">standard night out</a>. The <a href="/indie-rock-night" className="gold-link">live music</a> creates an energy you won&rsquo;t find anywhere else, and the unlimited drinks make it outstanding value.
           </p>
           <p>
-            New to Rock &amp; Pour? Read our <a href="/first-time-guide" className="gold-link">first-time guide</a>, check <a href="/what-to-wear-night-out" className="gold-link">what to wear</a>, and browse the <a href="/first-time-guide" className="gold-link">FAQ</a>. You can also explore <a href="/first-time-guide" className="gold-link">the full experience</a> to understand what makes this night unlike anything else.
+            New to Rock &amp; Pour? Read our <a href="/first-time-guide" className="gold-link">first-time guide</a>, check <a href="/what-to-wear-night-out" className="gold-link">what to wear</a>, and browse the FAQ to understand what makes this night unlike anything else.
           </p>
         </section>
 

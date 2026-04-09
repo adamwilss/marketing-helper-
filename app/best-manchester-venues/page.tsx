@@ -37,10 +37,10 @@ export default function BestManchesterVenues() {
         <section className="scroll-reveal" style={{ marginBottom: '3rem' }}>
           <h2>Manchester&rsquo;s Live Music Heritage</h2>
           <p>
-            Manchester&rsquo;s contribution to British music is unparalleled. The city gave us Joy Division, The Smiths, Oasis, The Stone Roses, and countless others. That musical DNA runs through Rock &amp; Pour events, where <a href="/indie-rock-night" className="gold-link">live bands</a> perform the songs that made Manchester the music capital of the UK. For <a href="/indie-rock-night" className="gold-link">rock fans</a>, <a href="/indie-rock-night" className="gold-link">indie lovers</a>, and <a href="/britpop-lovers" className="gold-link">Britpop devotees</a>, it&rsquo;s a pilgrimage.
+            Manchester&rsquo;s contribution to British music is unparalleled. The city gave us Joy Division, The Smiths, Oasis, The Stone Roses, and countless others. That musical DNA runs through Rock &amp; Pour events, where <a href="/indie-rock-night" className="gold-link">live bands</a> perform the songs that made Manchester the music capital of the UK. For rock fans, indie lovers, and <a href="/britpop-lovers" className="gold-link">Britpop devotees</a>, it&rsquo;s a pilgrimage.
           </p>
           <p>
-            Explore <a href="/best-manchester-venues" className="gold-link">Manchester live music events</a>, read about <a href="/indie-rock-night" className="gold-link">why live music matters</a>, or browse our <a href="/indie-rock-night" className="gold-link">live music guide</a> for more on the musical experience. Rock &amp; Pour is the <a href="/all-inclusive-drinks-events" className="gold-link">alternative to nightclubs</a> that honours Manchester&rsquo;s musical heritage.
+            Explore <a href="/best-manchester-venues" className="gold-link">Manchester live music events</a>, read about <a href="/indie-rock-night" className="gold-link">why live music matters</a>, or browse our live music guide for more on the musical experience. Rock &amp; Pour is the <a href="/all-inclusive-drinks-events" className="gold-link">alternative to nightclubs</a> that honours Manchester&rsquo;s musical heritage.
           </p>
         </section>
 
@@ -54,7 +54,7 @@ export default function BestManchesterVenues() {
             <li><a href="/best-manchester-venues" className="gold-link">Manchester date nights</a> that stand out from the crowd</li>
             <li><a href="/corporate-events" className="gold-link">Corporate events</a> and <a href="/team-building-events" className="gold-link">team building</a> that impress</li>
             <li><a href="/team-building-events" className="gold-link">Group events</a> where everyone stays together</li>
-            <li><a href="/birthday-celebration-ideas" className="gold-link">Stag dos</a> and <a href="/birthday-celebration-ideas" className="gold-link">hen parties</a> to remember</li>
+            <li><a href="/birthday-celebration-ideas" className="gold-link">Stag dos</a> and hen parties to remember</li>
           </ul>
           <p>
             See <a href="/how-to-budget-night-out" className="gold-link">pricing</a>, check <a href="/" className="gold-link">upcoming events</a>, and read the <a href="/first-time-guide" className="gold-link">first-time guide</a> to get started. The <a href="/first-time-guide" className="gold-link">FAQ</a> covers common questions.

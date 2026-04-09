@@ -45,12 +45,12 @@ export default function WhatToWear() {
             Dress to impress, but keep it comfortable. You want to look great and feel confident while dancing together. For <a href="/best-manchester-venues" className="gold-link">Manchester date nights</a>, the smart-casual sweet spot is perfect.
           </p>
 
-          <h3><a href="/birthday-celebration-ideas" className="gold-link">Hen Parties</a> &amp; <a href="/birthday-celebration-ideas" className="gold-link">Girls&rsquo; Nights</a></h3>
+          <h3>Hen Parties &amp; Girls&rsquo; Nights</h3>
           <p>
             Go as coordinated or individual as you like. Matching outfits, themed accessories, or just everyone wearing their favourite outfit &mdash; all welcome. Comfortable shoes remain non-negotiable.
           </p>
 
-          <h3><a href="/birthday-celebration-ideas" className="gold-link">Stag Dos</a> &amp; <a href="/birthday-celebration-ideas" className="gold-link">Lads&rsquo; Nights</a></h3>
+          <h3>Stag Dos &amp; Lads&rsquo; Nights</h3>
           <p>
             Smart-casual is the standard. A good shirt or polo, dark jeans, clean shoes. If the stag is in fancy dress, that&rsquo;s between you and the groom &mdash; but make sure everyone else looks the part.
           </p>
@@ -67,7 +67,7 @@ export default function WhatToWear() {
             At Rock &amp; Pour, you&rsquo;ll be on your feet for most of the night. You&rsquo;ll be dancing, singing along to <a href="/britpop-lovers" className="gold-link">Britpop anthems</a> and <a href="/indie-rock-night" className="gold-link">indie classics</a>, and moving around the venue with <a href="/premium-selection" className="gold-link">drinks</a> in hand. Choose an outfit that lets you do all of that without restriction. Looking good matters, but feeling good matters more.
           </p>
           <p>
-            For more tips on making the most of your evening, read our <a href="/first-time-guide" className="gold-link">night out tips</a>, check the <a href="/first-time-guide" className="gold-link">first-time guide</a>, and browse the <a href="/first-time-guide" className="gold-link">FAQ</a>. And explore the <a href="/premium-selection" className="gold-link">drinks selection</a> so you know what to order first.
+            For more tips on making the most of your evening, read our <a href="/first-time-guide" className="gold-link">first-time guide</a> for night out tips, and browse the FAQ. And explore the <a href="/premium-selection" className="gold-link">drinks selection</a> so you know what to order first.
           </p>
         </section>
 

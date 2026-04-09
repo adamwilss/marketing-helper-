@@ -63,12 +63,12 @@ export default function IndieRockNight() {
           <ul style={{ lineHeight: '2', paddingLeft: '1.5rem' }}>
             <li><a href="/team-building-events" className="gold-link">Group events</a> &mdash; everyone together, singing indie anthems</li>
             <li><a href="/birthday-celebration-ideas" className="gold-link">Birthdays</a> &mdash; an indie rock birthday is the best birthday</li>
-            <li><a href="/birthday-celebration-ideas" className="gold-link">Stag dos</a> &amp; <a href="/birthday-celebration-ideas" className="gold-link">lads&rsquo; nights</a> &mdash; indie anthems and unlimited drinks</li>
-            <li><a href="/birthday-celebration-ideas" className="gold-link">Hen parties</a> &amp; <a href="/birthday-celebration-ideas" className="gold-link">girls&rsquo; nights</a> &mdash; indie rock isn&rsquo;t just for the lads</li>
-            <li><a href="/birthday-celebration-ideas" className="gold-link">Date nights</a> &mdash; bond over shared indie tastes</li>
+            <li>Stag dos &amp; lads&rsquo; nights &mdash; indie anthems and unlimited drinks</li>
+            <li>Hen parties &amp; girls&rsquo; nights &mdash; indie rock isn&rsquo;t just for the lads</li>
+            <li>Date nights &mdash; bond over shared indie tastes</li>
           </ul>
           <p>
-            Near <a href="/best-manchester-venues" className="gold-link">Manchester</a>, <a href="/warrington-nights-out" className="gold-link">Warrington</a>, or <a href="/cheshire-events" className="gold-link">Cheshire</a>? Check <a href="/" className="gold-link">upcoming events</a>. Also explore <a href="/indie-rock-night" className="gold-link">rock fan</a> and <a href="/indie-rock-night" className="gold-link">indie fan</a> content. Read the <a href="/first-time-guide" className="gold-link">first-time guide</a> and <a href="/first-time-guide" className="gold-link">FAQ</a>.
+            Near <a href="/best-manchester-venues" className="gold-link">Manchester</a>, <a href="/warrington-nights-out" className="gold-link">Warrington</a>, or <a href="/cheshire-events" className="gold-link">Cheshire</a>? Check <a href="/" className="gold-link">upcoming events</a>. Read the <a href="/first-time-guide" className="gold-link">first-time guide</a> and FAQ.
           </p>
         </section>
 

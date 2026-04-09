@@ -34,7 +34,7 @@ export default function BritpopLovers() {
             Britpop didn&rsquo;t just produce great songs &mdash; it produced an era. The mid-90s in Britain was a moment of cultural confidence, creativity, and community. Rock &amp; Pour channels that spirit at every event. The atmosphere at <a href="/" className="gold-link">The Bowdon Rooms</a> on a Britpop-heavy night feels like stepping back into 1995, except the drinks are better and you can actually afford them.
           </p>
           <p>
-            If you love Britpop, you probably also love <a href="/britpop-lovers" className="gold-link">90s nostalgia</a> in general, <a href="/indie-rock-night" className="gold-link">indie music</a>, and <a href="/indie-rock-night" className="gold-link">rock</a>. Rock &amp; Pour covers all of it. Read our <a href="/indie-rock-night" className="gold-link">live music guide</a> for the full genre breakdown.
+            If you love Britpop, you probably also love <a href="/britpop-lovers" className="gold-link">90s nostalgia</a> in general, <a href="/indie-rock-night" className="gold-link">indie music</a>, and rock. Rock &amp; Pour covers all of it. Read our live music guide for the full genre breakdown.
           </p>
         </section>
 
@@ -43,7 +43,7 @@ export default function BritpopLovers() {
           <ul style={{ lineHeight: '2', paddingLeft: '1.5rem' }}>
             <li><a href="/birthday-celebration-ideas" className="gold-link">Reunion nights</a> &mdash; get the old crew together and relive the 90s</li>
             <li><a href="/birthday-celebration-ideas" className="gold-link">Milestone birthdays</a> &mdash; if you were born in the 70s or 80s, this is your soundtrack</li>
-            <li><a href="/birthday-celebration-ideas" className="gold-link">Stag dos</a> and <a href="/birthday-celebration-ideas" className="gold-link">lads&rsquo; nights</a> &mdash; Britpop singalongs with unlimited drinks</li>
+            <li>Stag dos and lads&rsquo; nights &mdash; Britpop singalongs with unlimited drinks</li>
             <li><a href="/team-building-events" className="gold-link">Group events</a> &mdash; bring anyone who ever owned an Oasis album (so, everyone)</li>
             <li><a href="/corporate-events" className="gold-link">Corporate events</a> &mdash; Britpop crosses generational divides in any office</li>
           </ul>

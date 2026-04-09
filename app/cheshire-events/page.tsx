@@ -46,10 +46,10 @@ export default function CheshireEvents() {
           <ul style={{ lineHeight: '2', paddingLeft: '1.5rem' }}>
             <li><a href="/birthday-celebration-ideas" className="gold-link">Birthday celebrations</a> &mdash; the best birthday night in Cheshire</li>
             <li><a href="/corporate-events" className="gold-link">Corporate events</a> &amp; <a href="/team-building-events" className="gold-link">team building</a> &mdash; impress your team without the Manchester commute</li>
-            <li><a href="/birthday-celebration-ideas" className="gold-link">Hen parties</a> &amp; <a href="/birthday-celebration-ideas" className="gold-link">stag dos</a> &mdash; all-inclusive celebrations close to home</li>
-            <li><a href="/birthday-celebration-ideas" className="gold-link">Date nights</a> &mdash; something genuinely different for Cheshire couples</li>
-            <li><a href="/team-building-events" className="gold-link">Group events</a> &mdash; friends, families, and <a href="/birthday-celebration-ideas" className="gold-link">reunions</a></li>
-            <li><a href="/birthday-celebration-ideas" className="gold-link">Girls&rsquo; nights</a> &amp; <a href="/birthday-celebration-ideas" className="gold-link">lads&rsquo; nights</a> &mdash; premium nights without the city-centre prices</li>
+            <li>Hen parties &amp; stag dos &mdash; all-inclusive celebrations close to home</li>
+            <li>Date nights &mdash; something genuinely different for Cheshire couples</li>
+            <li><a href="/team-building-events" className="gold-link">Group events</a> &mdash; friends, families, and reunions</li>
+            <li>Girls&rsquo; nights &amp; lads&rsquo; nights &mdash; premium nights without the city-centre prices</li>
           </ul>
         </section>
 
@@ -59,14 +59,14 @@ export default function CheshireEvents() {
             Rock &amp; Pour is the <a href="/all-inclusive-drinks-events" className="gold-link">alternative to nightclubs</a> that Cheshire has been waiting for. Instead of paying for taxis into Manchester, &pound;15 entry fees, and &pound;8 drinks, you get a premium live music experience on your doorstep for a fixed &pound;55. The <a href="/premium-selection" className="gold-link">drinks are premium</a>, the <a href="/indie-rock-night" className="gold-link">bands are outstanding</a>, and the venue has more character than any chain bar on Deansgate.
           </p>
           <p>
-            Compare it to a <a href="/all-inclusive-drinks-events" className="gold-link">nightclub</a>, a <a href="/all-inclusive-drinks-events" className="gold-link">pub crawl</a>, or a <a href="/how-to-budget-night-out" className="gold-link">normal night out</a>, and the choice is clear. Rock &amp; Pour gives you more for less, with zero hassle. Whether you&rsquo;re a <a href="/indie-rock-night" className="gold-link">rock fan</a>, an <a href="/indie-rock-night" className="gold-link">indie lover</a>, or simply someone who appreciates a quality night out, you&rsquo;ll love it.
+            Compare it to a <a href="/all-inclusive-drinks-events" className="gold-link">nightclub</a>, a <a href="/all-inclusive-drinks-events" className="gold-link">pub crawl</a>, or a <a href="/how-to-budget-night-out" className="gold-link">normal night out</a>, and the choice is clear. Rock &amp; Pour gives you more for less, with zero hassle. Whether you&rsquo;re a <a href="/indie-rock-night" className="gold-link">rock fan</a>, an indie lover, or simply someone who appreciates a quality night out, you&rsquo;ll love it.
           </p>
         </section>
 
         <section className="scroll-reveal" style={{ marginBottom: '3rem' }}>
           <h2>First Time? Everything You Need to Know</h2>
           <p>
-            New to Rock &amp; Pour? Our <a href="/first-time-guide" className="gold-link">first-time guide</a> covers the full experience from arrival to last orders. Check the <a href="/what-to-wear-night-out" className="gold-link">what to wear guide</a> for dress code tips, browse <a href="/first-time-guide" className="gold-link">night out tips</a> for making the most of your evening, and visit the <a href="/first-time-guide" className="gold-link">FAQ</a> for quick answers. Explore <a href="/first-time-guide" className="gold-link">the experience</a> page to understand how the evening unfolds, and read our <a href="/indie-rock-night" className="gold-link">live music guide</a> for more on the musical side.
+            New to Rock &amp; Pour? Our <a href="/first-time-guide" className="gold-link">first-time guide</a> covers the full experience from arrival to last orders. Check the <a href="/what-to-wear-night-out" className="gold-link">what to wear guide</a> for dress code tips, browse night out tips for making the most of your evening, and visit the FAQ for quick answers. Explore the experience page to understand how the evening unfolds, and read our <a href="/indie-rock-night" className="gold-link">live music guide</a> for more on the musical side.
           </p>
         </section>
 

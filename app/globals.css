@@ -697,7 +697,7 @@ a {
 @media (max-width: 768px) {
     .hero-content {
         padding: 0 1.2rem;
-        padding-top: 100px !important;
+        padding-top: 130px !important;
         gap: 1rem;
     }
 }
@@ -705,7 +705,7 @@ a {
 @media (max-width: 480px) {
     .hero-content {
         padding: 0 1rem;
-        padding-top: 80px !important;
+        padding-top: 120px !important;
         gap: 0.8rem;
     }
 }
@@ -1489,8 +1489,10 @@ a {
 /* Hero Mobile Optimizations */
 @media (max-width: 768px) {
     .hero {
-        min-height: 700px;
+        height: auto;
+        min-height: 100dvh;
         padding-bottom: 10vh;
+        justify-content: flex-start;
     }
 
     .hero-headline {
@@ -1507,9 +1509,11 @@ a {
 
 @media (max-width: 480px) {
     .hero {
-        min-height: 600px;
+        height: auto;
+        min-height: 100dvh;
         padding-bottom: 8vh;
         padding-top: 70px;
+        justify-content: flex-start;
     }
 
     .hero-headline {
@@ -3019,8 +3023,9 @@ details[open] .collapse-arrow {
 
     /* Dynamic viewport height — browser chrome won't eat the hero */
     .hero {
-        height: 100dvh;
-        min-height: unset;
+        height: auto;
+        min-height: 100dvh;
+        justify-content: flex-start;
     }
 
     .hero-subtitle {
@@ -3112,13 +3117,14 @@ details[open] .collapse-arrow {
     .nav-links.active { display: flex; }
 
     .hero {
-        height: 100dvh;
-        min-height: unset;
+        height: auto;
+        min-height: 100dvh;
+        justify-content: flex-start;
     }
 
-    /* Push content clear of the fixed navbar */
+    /* Push content clear of the fixed banner + navbar */
     .hero-content {
-        padding-top: 100px !important;
+        padding-top: 130px !important;
         padding-bottom: 8px;
     }
 

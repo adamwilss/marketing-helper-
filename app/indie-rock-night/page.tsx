@@ -7,16 +7,16 @@ export default function IndieRockNight() {
       <div className="container">
         <h1 className="page-h1">Indie Rock Nights &mdash; Live Bands &amp; All-Inclusive Drinks at Rock &amp; Pour</h1>
         <p style={{ fontSize: '1.2rem', maxWidth: '800px', margin: '0 auto 2rem' }}>
-          An indie rock night done right: outstanding <a href="/bands" className="gold-link">live bands</a>, unlimited <a href="/premium-selection" className="gold-link">premium drinks</a>, and a crowd that knows every word. Rock &amp; Pour delivers the definitive indie rock experience at <a href="/bowdon-rooms" className="gold-link">The Bowdon Rooms</a> &mdash; no DJs, no playlists, just real musicians playing the songs that matter.
+          An indie rock night done right: outstanding <a href="/indie-rock-night" className="gold-link">live bands</a>, unlimited <a href="/premium-selection" className="gold-link">premium drinks</a>, and a crowd that knows every word. Rock &amp; Pour delivers the definitive indie rock experience at <a href="/" className="gold-link">The Bowdon Rooms</a> &mdash; no DJs, no playlists, just real musicians playing the songs that matter.
         </p>
 
         <section className="scroll-reveal" style={{ marginBottom: '3rem' }}>
           <h2>What Is an Indie Rock Night at Rock &amp; Pour?</h2>
           <p>
-            Indie rock nights at Rock &amp; Pour are evenings built around the genre&rsquo;s greatest songs performed live. From The Strokes to Arctic Monkeys, from Oasis to Kasabian, our <a href="/bands" className="gold-link">bands</a> deliver a setlist that captures the energy, attitude, and anthemic power of indie rock. Unlike &ldquo;indie nights&rdquo; at clubs where a DJ plays indie tracks over a sound system designed for dance music, Rock &amp; Pour puts real musicians on a real stage with a sound system built for live instruments.
+            Indie rock nights at Rock &amp; Pour are evenings built around the genre&rsquo;s greatest songs performed live. From The Strokes to Arctic Monkeys, from Oasis to Kasabian, our <a href="/indie-rock-night" className="gold-link">bands</a> deliver a setlist that captures the energy, attitude, and anthemic power of indie rock. Unlike &ldquo;indie nights&rdquo; at clubs where a DJ plays indie tracks over a sound system designed for dance music, Rock &amp; Pour puts real musicians on a real stage with a sound system built for live instruments.
           </p>
           <p>
-            The result is transformative. When the opening riff of &ldquo;I Bet You Look Good on the Dancefloor&rdquo; comes from actual guitars instead of speakers, the energy in the room shifts. When 300 people sing &ldquo;Don&rsquo;t Look Back in Anger&rdquo; together with a live band powering the chorus, it creates a moment that no playlist can touch. That&rsquo;s <a href="/why-live-music-matters" className="gold-link">why live music matters</a>.
+            The result is transformative. When the opening riff of &ldquo;I Bet You Look Good on the Dancefloor&rdquo; comes from actual guitars instead of speakers, the energy in the room shifts. When 300 people sing &ldquo;Don&rsquo;t Look Back in Anger&rdquo; together with a live band powering the chorus, it creates a moment that no playlist can touch. That&rsquo;s <a href="/indie-rock-night" className="gold-link">why live music matters</a>.
           </p>
         </section>
 
@@ -28,11 +28,11 @@ export default function IndieRockNight() {
             <li><strong>Kasabian:</strong> &ldquo;L.S.F.,&rdquo; &ldquo;Fire&rdquo; &mdash; stadium indie at its finest</li>
             <li><strong>Kaiser Chiefs:</strong> &ldquo;I Predict a Riot,&rdquo; &ldquo;Ruby&rdquo; &mdash; crowd-pleasers that never fail</li>
             <li><strong><a href="/britpop-lovers" className="gold-link">Britpop legends</a>:</strong> Oasis, Blur, Pulp, The Verve</li>
-            <li><strong><a href="/90s-nostalgia" className="gold-link">90s classics</a>:</strong> Stone Roses, Stereophonics, Manic Street Preachers</li>
+            <li><strong><a href="/britpop-lovers" className="gold-link">90s classics</a>:</strong> Stone Roses, Stereophonics, Manic Street Preachers</li>
             <li><strong>Modern anthems:</strong> The Killers, Foo Fighters, Catfish and the Bottlemen</li>
           </ul>
           <p>
-            Read our <a href="/live-music-guide" className="gold-link">live music guide</a> for more on what to expect from the musical experience.
+            Read our <a href="/indie-rock-night" className="gold-link">live music guide</a> for more on what to expect from the musical experience.
           </p>
         </section>
 
@@ -41,12 +41,12 @@ export default function IndieRockNight() {
 
           <h3>vs Club &ldquo;Indie Nights&rdquo;</h3>
           <p>
-            Club indie nights play indie tracks through a DJ setup. It&rsquo;s recorded music in a <a href="/vs-nightclub" className="gold-link">nightclub</a> environment. Rock &amp; Pour gives you the real thing &mdash; live instruments, live vocals, live energy.
+            Club indie nights play indie tracks through a DJ setup. It&rsquo;s recorded music in a <a href="/all-inclusive-drinks-events" className="gold-link">nightclub</a> environment. Rock &amp; Pour gives you the real thing &mdash; live instruments, live vocals, live energy.
           </p>
 
           <h3>vs Gig Tickets</h3>
           <p>
-            Individual gig tickets cost &pound;30&ndash;&pound;80+ and you pay full price for drinks on top. Rock &amp; Pour is &pound;55 with unlimited drinks included. See <a href="/pricing" className="gold-link">pricing</a>.
+            Individual gig tickets cost &pound;30&ndash;&pound;80+ and you pay full price for drinks on top. Rock &amp; Pour is &pound;55 with unlimited drinks included. See <a href="/how-to-budget-night-out" className="gold-link">pricing</a>.
           </p>
 
           <h3>vs <a href="/music-festivals-alternatives" className="gold-link">Festivals</a></h3>
@@ -61,14 +61,14 @@ export default function IndieRockNight() {
             Rock &amp; Pour indie rock nights are ideal for:
           </p>
           <ul style={{ lineHeight: '2', paddingLeft: '1.5rem' }}>
-            <li><a href="/group-events" className="gold-link">Group events</a> &mdash; everyone together, singing indie anthems</li>
+            <li><a href="/team-building-events" className="gold-link">Group events</a> &mdash; everyone together, singing indie anthems</li>
             <li><a href="/birthday-celebration-ideas" className="gold-link">Birthdays</a> &mdash; an indie rock birthday is the best birthday</li>
-            <li><a href="/stag-do-ideas" className="gold-link">Stag dos</a> &amp; <a href="/lads-night-out" className="gold-link">lads&rsquo; nights</a> &mdash; indie anthems and unlimited drinks</li>
-            <li><a href="/hen-party-ideas" className="gold-link">Hen parties</a> &amp; <a href="/girls-night-out" className="gold-link">girls&rsquo; nights</a> &mdash; indie rock isn&rsquo;t just for the lads</li>
-            <li><a href="/date-night" className="gold-link">Date nights</a> &mdash; bond over shared indie tastes</li>
+            <li><a href="/birthday-celebration-ideas" className="gold-link">Stag dos</a> &amp; <a href="/birthday-celebration-ideas" className="gold-link">lads&rsquo; nights</a> &mdash; indie anthems and unlimited drinks</li>
+            <li><a href="/birthday-celebration-ideas" className="gold-link">Hen parties</a> &amp; <a href="/birthday-celebration-ideas" className="gold-link">girls&rsquo; nights</a> &mdash; indie rock isn&rsquo;t just for the lads</li>
+            <li><a href="/birthday-celebration-ideas" className="gold-link">Date nights</a> &mdash; bond over shared indie tastes</li>
           </ul>
           <p>
-            Near <a href="/manchester-nights-out" className="gold-link">Manchester</a>, <a href="/warrington-nights-out" className="gold-link">Warrington</a>, or <a href="/cheshire-events" className="gold-link">Cheshire</a>? Check <a href="/events" className="gold-link">upcoming events</a>. Also explore <a href="/rock-music-fans" className="gold-link">rock fan</a> and <a href="/indie-music-fans" className="gold-link">indie fan</a> content. Read the <a href="/first-time-guide" className="gold-link">first-time guide</a> and <a href="/faq" className="gold-link">FAQ</a>.
+            Near <a href="/best-manchester-venues" className="gold-link">Manchester</a>, <a href="/warrington-nights-out" className="gold-link">Warrington</a>, or <a href="/cheshire-events" className="gold-link">Cheshire</a>? Check <a href="/" className="gold-link">upcoming events</a>. Also explore <a href="/indie-rock-night" className="gold-link">rock fan</a> and <a href="/indie-rock-night" className="gold-link">indie fan</a> content. Read the <a href="/first-time-guide" className="gold-link">first-time guide</a> and <a href="/first-time-guide" className="gold-link">FAQ</a>.
           </p>
         </section>
 

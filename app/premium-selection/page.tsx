@@ -248,6 +248,30 @@ export default function PremiumSelection() {
         </div>
       </section>
 
+      {/* How the Bar Works */}
+      <section className="section">
+        <div className="container">
+          <div className="scroll-reveal" style={{ textAlign: 'center', marginBottom: '2rem' }}>
+            <p className="section-overline">No Tokens. No Limits.</p>
+            <h2 className="section-title">How the <span className="gold-text">All-Inclusive</span> Bar Works</h2>
+          </div>
+          <div className="scroll-reveal" style={{ maxWidth: '800px', margin: '0 auto' }}>
+            <p>The bar is open and fully stocked from the moment doors open at 7:30 PM until the event finishes. Simply walk up, tell the bar staff what you want, and it&rsquo;s yours. No wallet needed. No queuing with your card, no splitting rounds, no running out of cash.</p>
+          </div>
+
+          <div className="scroll-reveal" style={{ maxWidth: '800px', margin: '2rem auto 0' }}>
+            <h3 style={{ marginBottom: '1rem' }}>Drinks Tips for Your Night</h3>
+            <ul style={{ lineHeight: '2', paddingLeft: '1.5rem' }}>
+              <li><strong>Arrive early:</strong> Get to the bar before the band starts and try a few options</li>
+              <li><strong>Pace yourself:</strong> The drinks are unlimited all night &mdash; no need to rush</li>
+              <li><strong>Try something new:</strong> With unlimited drinks, it&rsquo;s the perfect chance to explore</li>
+              <li><strong>Stay hydrated:</strong> Alternate with water, especially if you&rsquo;re dancing</li>
+              <li><strong>Check the house rules:</strong> Review our <a href="/house-rules" className="gold-link">house rules</a> for responsible drinking guidelines</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
       {/* CTA Back */}
       <section className="premium-cta section dark-bg">
         <div className="container text-center">

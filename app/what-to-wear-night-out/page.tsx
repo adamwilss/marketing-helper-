@@ -7,20 +7,20 @@ export default function WhatToWear() {
       <div className="container">
         <h1 className="page-h1">What to Wear on a Night Out &mdash; Style Guide for Rock &amp; Pour</h1>
         <p style={{ fontSize: '1.2rem', maxWidth: '800px', margin: '0 auto 2rem' }}>
-          Getting your outfit right sets the tone for the whole evening. Rock &amp; Pour at <a href="/bowdon-rooms" className="gold-link">The Bowdon Rooms</a> strikes the perfect balance between casual and premium &mdash; and your outfit should do the same. Here&rsquo;s everything you need to know about dressing for the best night of your year.
+          Getting your outfit right sets the tone for the whole evening. Rock &amp; Pour at <a href="/" className="gold-link">The Bowdon Rooms</a> strikes the perfect balance between casual and premium &mdash; and your outfit should do the same. Here&rsquo;s everything you need to know about dressing for the best night of your year.
         </p>
 
         <section className="scroll-reveal" style={{ marginBottom: '3rem' }}>
           <h2>The Rock &amp; Pour Dress Code: Smart-Casual</h2>
           <p>
-            Rock &amp; Pour isn&rsquo;t a nightclub, so you don&rsquo;t need to dress like you&rsquo;re hitting Deansgate. It&rsquo;s not a pub crawl either, so joggers and trainers aren&rsquo;t the vibe. Think smart-casual &mdash; the kind of outfit where you look good, feel good, and can comfortably dance to <a href="/bands" className="gold-link">live bands</a> for four hours. The key word is comfort, with a touch of style.
+            Rock &amp; Pour isn&rsquo;t a nightclub, so you don&rsquo;t need to dress like you&rsquo;re hitting Deansgate. It&rsquo;s not a pub crawl either, so joggers and trainers aren&rsquo;t the vibe. Think smart-casual &mdash; the kind of outfit where you look good, feel good, and can comfortably dance to <a href="/indie-rock-night" className="gold-link">live bands</a> for four hours. The key word is comfort, with a touch of style.
           </p>
         </section>
 
         <section className="scroll-reveal" style={{ marginBottom: '3rem' }}>
           <h2>What to Wear: Men</h2>
           <ul style={{ lineHeight: '2', paddingLeft: '1.5rem' }}>
-            <li><strong>Top half:</strong> A well-fitted shirt (buttoned or open collar), a quality t-shirt, or a casual blazer over a tee. Band t-shirts are absolutely welcome &mdash; this is a <a href="/rock-music-fans" className="gold-link">rock music</a> event, after all.</li>
+            <li><strong>Top half:</strong> A well-fitted shirt (buttoned or open collar), a quality t-shirt, or a casual blazer over a tee. Band t-shirts are absolutely welcome &mdash; this is a <a href="/indie-rock-night" className="gold-link">rock music</a> event, after all.</li>
             <li><strong>Bottom half:</strong> Dark jeans, chinos, or smart trousers. Well-fitted is the key word.</li>
             <li><strong>Footwear:</strong> Clean trainers, boots, or smart shoes. Comfort is essential &mdash; you&rsquo;ll be on your feet all night.</li>
             <li><strong>Avoid:</strong> Sportswear, flip-flops, overly formal suits (unless that&rsquo;s your thing).</li>
@@ -40,17 +40,17 @@ export default function WhatToWear() {
         <section className="scroll-reveal" style={{ marginBottom: '3rem' }}>
           <h2>Dressing for Specific Occasions</h2>
 
-          <h3><a href="/date-night" className="gold-link">Date Night</a></h3>
+          <h3><a href="/birthday-celebration-ideas" className="gold-link">Date Night</a></h3>
           <p>
-            Dress to impress, but keep it comfortable. You want to look great and feel confident while dancing together. For <a href="/date-night-manchester" className="gold-link">Manchester date nights</a>, the smart-casual sweet spot is perfect.
+            Dress to impress, but keep it comfortable. You want to look great and feel confident while dancing together. For <a href="/best-manchester-venues" className="gold-link">Manchester date nights</a>, the smart-casual sweet spot is perfect.
           </p>
 
-          <h3><a href="/hen-party-ideas" className="gold-link">Hen Parties</a> &amp; <a href="/girls-night-out" className="gold-link">Girls&rsquo; Nights</a></h3>
+          <h3><a href="/birthday-celebration-ideas" className="gold-link">Hen Parties</a> &amp; <a href="/birthday-celebration-ideas" className="gold-link">Girls&rsquo; Nights</a></h3>
           <p>
             Go as coordinated or individual as you like. Matching outfits, themed accessories, or just everyone wearing their favourite outfit &mdash; all welcome. Comfortable shoes remain non-negotiable.
           </p>
 
-          <h3><a href="/stag-do-ideas" className="gold-link">Stag Dos</a> &amp; <a href="/lads-night-out" className="gold-link">Lads&rsquo; Nights</a></h3>
+          <h3><a href="/birthday-celebration-ideas" className="gold-link">Stag Dos</a> &amp; <a href="/birthday-celebration-ideas" className="gold-link">Lads&rsquo; Nights</a></h3>
           <p>
             Smart-casual is the standard. A good shirt or polo, dark jeans, clean shoes. If the stag is in fancy dress, that&rsquo;s between you and the groom &mdash; but make sure everyone else looks the part.
           </p>
@@ -64,10 +64,10 @@ export default function WhatToWear() {
         <section className="scroll-reveal" style={{ marginBottom: '3rem' }}>
           <h2>The Golden Rule: Comfort First</h2>
           <p>
-            At Rock &amp; Pour, you&rsquo;ll be on your feet for most of the night. You&rsquo;ll be dancing, singing along to <a href="/britpop-lovers" className="gold-link">Britpop anthems</a> and <a href="/indie-music-fans" className="gold-link">indie classics</a>, and moving around the venue with <a href="/premium-selection" className="gold-link">drinks</a> in hand. Choose an outfit that lets you do all of that without restriction. Looking good matters, but feeling good matters more.
+            At Rock &amp; Pour, you&rsquo;ll be on your feet for most of the night. You&rsquo;ll be dancing, singing along to <a href="/britpop-lovers" className="gold-link">Britpop anthems</a> and <a href="/indie-rock-night" className="gold-link">indie classics</a>, and moving around the venue with <a href="/premium-selection" className="gold-link">drinks</a> in hand. Choose an outfit that lets you do all of that without restriction. Looking good matters, but feeling good matters more.
           </p>
           <p>
-            For more tips on making the most of your evening, read our <a href="/night-out-tips" className="gold-link">night out tips</a>, check the <a href="/first-time-guide" className="gold-link">first-time guide</a>, and browse the <a href="/faq" className="gold-link">FAQ</a>. And explore the <a href="/drinks-guide" className="gold-link">drinks selection</a> so you know what to order first.
+            For more tips on making the most of your evening, read our <a href="/first-time-guide" className="gold-link">night out tips</a>, check the <a href="/first-time-guide" className="gold-link">first-time guide</a>, and browse the <a href="/first-time-guide" className="gold-link">FAQ</a>. And explore the <a href="/premium-selection" className="gold-link">drinks selection</a> so you know what to order first.
           </p>
         </section>
 

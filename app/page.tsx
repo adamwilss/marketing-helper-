@@ -339,6 +339,27 @@ export default function Home() {
         </div>
       </section>
 
+      {/* Venue Section */}
+      <section className="section dark-bg" id="venue">
+        <div className="container">
+          <div className="text-center scroll-reveal">
+            <h2 className="section-title">The <span className="gold-text">Venue</span></h2>
+            <p style={{ maxWidth: '700px', margin: '0 auto 2rem', color: 'var(--color-text-muted)' }}>The Bowdon Rooms &mdash; a stunning 300-capacity venue with period character and a professional sound system built for live music.</p>
+          </div>
+          <div className="scroll-reveal" style={{ maxWidth: '800px', margin: '0 auto' }}>
+            <ul style={{ lineHeight: '2.2', paddingLeft: '1.5rem', listStyle: 'none' }}>
+              <li><strong>Address:</strong> The Firs, Bowdon, Altrincham WA14 2TQ</li>
+              <li><strong>Capacity:</strong> 300 people &mdash; intimate enough to feel personal, big enough for real energy</li>
+              <li><strong>By car:</strong> ~25 minutes from Manchester city centre. Local parking available</li>
+              <li><strong>By tram:</strong> Metrolink to Altrincham station, then a short taxi or bus ride</li>
+              <li><strong>By taxi:</strong> Typical fare from Manchester centre &pound;15&ndash;&pound;25</li>
+              <li><strong>From Warrington:</strong> ~20 minutes by car via the A56</li>
+              <li><strong>Box Office:</strong> <a href="tel:01619268992" className="phone-link" style={{ color: 'var(--color-gold)' }}>0161 926 8992</a></li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
       {/* Footer */}
       < footer className="footer" >
         <div className="container">
@@ -352,67 +373,34 @@ export default function Home() {
                 <summary><h4>Explore Rock &amp; Pour ▾</h4></summary>
                 <div className="footer-dropdown-grid">
                   <div className="footer-dropdown-col">
-                    <span className="footer-dropdown-heading">The Basics</span>
-                    <a href="/the-experience">The Experience</a>
-                    <a href="/events">Events</a>
-                    <a href="/about">About</a>
-                    <a href="/pricing">Pricing</a>
-                    <a href="/faq">FAQ</a>
-                    <a href="/first-time-guide">First Time?</a>
+                    <span className="footer-dropdown-heading">Getting Started</span>
+                    <a href="/first-time-guide">First Time Guide</a>
+                    <a href="/our-story">Our Story</a>
                     <a href="/house-rules">House Rules</a>
-                  </div>
-                  <div className="footer-dropdown-col">
-                    <span className="footer-dropdown-heading">Music &amp; Drinks</span>
                     <a href="/premium-selection">Premium Selection</a>
-                    <a href="/drinks-guide">Drinks Guide</a>
-                    <a href="/bands">Bands</a>
-                    <a href="/bowdon-rooms">The Venue</a>
-                    <a href="/live-music-guide">Live Music Guide</a>
-                    <a href="/why-live-music-matters">Why Live Music</a>
-                    <a href="/indie-rock-night">Indie Rock Night</a>
                   </div>
                   <div className="footer-dropdown-col">
                     <span className="footer-dropdown-heading">Plan Your Night</span>
-                    <a href="/group-events">Group Events</a>
-                    <a href="/corporate-events">Corporate</a>
-                    <a href="/party-planning">Party Planning</a>
-                    <a href="/date-night">Date Night</a>
-                    <a href="/stag-do-ideas">Stag Dos</a>
-                    <a href="/hen-party-ideas">Hen Parties</a>
-                    <a href="/birthday-celebration-ideas">Birthdays</a>
+                    <a href="/birthday-celebration-ideas">Celebrations</a>
+                    <a href="/corporate-events">Corporate Events</a>
                     <a href="/team-building-events">Team Building</a>
+                    <a href="/all-inclusive-drinks-events">All-Inclusive Events</a>
                   </div>
                   <div className="footer-dropdown-col">
-                    <span className="footer-dropdown-heading">Who It&rsquo;s For</span>
-                    <a href="/girls-night-out">Girls Night</a>
-                    <a href="/lads-night-out">Lads Night</a>
-                    <a href="/office-night-out">Office Night</a>
-                    <a href="/reunion-night-out">Reunions</a>
-                    <a href="/rock-music-fans">Rock Fans</a>
+                    <span className="footer-dropdown-heading">Music &amp; Style</span>
+                    <a href="/indie-rock-night">Indie Rock Night</a>
                     <a href="/britpop-lovers">Britpop Lovers</a>
-                    <a href="/90s-nostalgia">90s Nostalgia</a>
-                    <a href="/indie-music-fans">Indie Fans</a>
-                  </div>
-                  <div className="footer-dropdown-col">
-                    <span className="footer-dropdown-heading">Local</span>
-                    <a href="/altrincham-nights-out">Altrincham</a>
-                    <a href="/manchester-nights-out">Manchester</a>
-                    <a href="/manchester-live-music-events">Manchester Music</a>
-                    <a href="/cheshire-events">Cheshire</a>
-                    <a href="/warrington-nights-out">Warrington</a>
-                    <a href="/best-manchester-venues">Best Venues</a>
-                    <a href="/date-night-manchester">Date Night MCR</a>
-                  </div>
-                  <div className="footer-dropdown-col">
-                    <span className="footer-dropdown-heading">Compare &amp; Tips</span>
-                    <a href="/vs-nightclub">vs Nightclubs</a>
-                    <a href="/vs-pub-crawl">vs Pub Crawls</a>
-                    <a href="/vs-normal-night-out">vs Normal Night</a>
-                    <a href="/alternative-to-nightclubs">Club Alternative</a>
-                    <a href="/night-out-tips">Night Out Tips</a>
                     <a href="/what-to-wear-night-out">What to Wear</a>
-                    <a href="/how-to-budget-night-out">Budgeting</a>
-                    <a href="/all-inclusive-drinks-events">All-Inclusive</a>
+                    <a href="/music-festivals-alternatives">Festival Alternatives</a>
+                  </div>
+                  <div className="footer-dropdown-col">
+                    <span className="footer-dropdown-heading">Local &amp; Value</span>
+                    <a href="/best-manchester-venues">Best Manchester Venues</a>
+                    <a href="/cheshire-events">Cheshire Events</a>
+                    <a href="/warrington-nights-out">Warrington Nights Out</a>
+                    <a href="/how-to-budget-night-out">Budget Guide</a>
+                    <a href="/best-beer-venues-uk">Best Beer Venues UK</a>
+                    <a href="/best-wine-venues-uk">Best Wine Venues UK</a>
                   </div>
                 </div>
               </details>

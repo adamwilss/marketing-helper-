@@ -1,5 +1,5 @@
 "use client";
-import React, { useEffect, useState, useCallback } from "react";
+import React, { useEffect, useState, useRef } from "react";
 import Image from "next/image";
 import { Typewriter } from "@/components/ui/typewriter";
 import { GlowingEffect } from "@/components/ui/glowing-effect";
@@ -42,24 +42,28 @@ const Countdown = React.memo(function Countdown({ targetDate }: { targetDate: st
 });
 
 export default function Home() {
-  const [inspectedPoster, setInspectedPoster] = useState<string | null>(null);
+  const bannerRef = useRef<HTMLDivElement>(null);
 
   const targetEvent = eventsData.find(e => !e.soldOut && new Date(e.date).getTime() > new Date().getTime()) || eventsData[0];
 
-  const handleEscKey = useCallback((e: KeyboardEvent) => {
-    if (e.key === 'Escape') setInspectedPoster(null);
-  }, []);
-
+  // Measure banner height and expose as CSS variable so navbar + hero stay clear
   useEffect(() => {
-    window.addEventListener('keydown', handleEscKey);
-    return () => window.removeEventListener('keydown', handleEscKey);
-  }, [handleEscKey]);
+    const banner = bannerRef.current;
+    if (!banner) return;
+    const update = () => {
+      document.documentElement.style.setProperty('--banner-height', `${banner.offsetHeight}px`);
+    };
+    update();
+    const ro = new ResizeObserver(update);
+    ro.observe(banner);
+    return () => ro.disconnect();
+  }, []);
 
   useEffect(() => {
     const pc = document.getElementById('hero-particles');
     if (!pc) return;
     pc.innerHTML = '';
-    for (let i = 0; i < 8; i++) {
+    for (let i = 0; i < 4; i++) {
       const p = document.createElement('div');
       p.className = 'particle';
       const size = Math.random() * 9 + 3;
@@ -76,7 +80,7 @@ export default function Home() {
     <>
 
       {/* Cancellation Banner */}
-      <div className="cancellation-banner">
+      <div className="cancellation-banner" ref={bannerRef}>
         <p>⚠️ IMPORTANT NOTICE: Due to unforeseen circumstances, the April 10th event has been cancelled. We sincerely apologise. Please contact the box office on <a href="tel:01619268992" className="phone-link">0161 926 8992</a> regarding refunds.</p>
       </div>
 
@@ -299,45 +303,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Poster Section */}
-      <section className="poster-section section" id="events">
-        <div className="container text-center">
-          <div className="poster-pair scroll-reveal">
-            <div className="poster-wrapper">
-              <GlowingEffect spread={60} glow={true} disabled={false} proximity={80} inactiveZone={0.01} borderWidth={2} />
-              <div className="poster-container" onClick={() => setInspectedPoster('/POSTER.webp')}>
-                <Image
-                  src="/POSTER.webp"
-                  alt="Rock & Pour — April 10th 2026 at The Bowdon Rooms"
-                  className="event-poster"
-                  width={520}
-                  height={737}
-                  loading="lazy"
-                  style={{ width: '100%', height: '100%' }}
-                />
-              </div>
-            </div>
-            <div className="poster-wrapper">
-              <GlowingEffect spread={60} glow={true} disabled={false} proximity={80} inactiveZone={0.01} borderWidth={2} />
-              <div className="poster-container" onClick={() => setInspectedPoster('/band-poster.webp')}>
-                <Image
-                  src="/band-poster.webp"
-                  alt="Steven and the Holy Heathens — live at Rock & Pour"
-                  className="event-poster"
-                  width={520}
-                  height={737}
-                  loading="lazy"
-                  style={{ width: '100%', height: '100%' }}
-                />
-              </div>
-            </div>
-          </div>
-          <div className="poster-cta scroll-reveal delay-2">
-            <a href="https://www.skiddle.com/whats-on/Warrington/The-Bowdon-Rooms/Rock--Pour/42147525/" target="_blank" rel="noreferrer" className="btn btn-gold btn-large">GET YOUR TICKETS</a>
-            <p className="discount-note">Use code <span className="gold-text">ROCK10</span> at checkout for 10% off</p>
-          </div>
-        </div>
-      </section>
 
       {/* Venue Section */}
       <section className="section dark-bg" id="venue">
@@ -418,14 +383,6 @@ export default function Home() {
         </div>
       </footer >
 
-      {inspectedPoster && (
-        <div className="lightbox-overlay" onClick={() => setInspectedPoster(null)}>
-          <div className="lightbox-content" onClick={e => e.stopPropagation()}>
-            <button className="lightbox-close" onClick={() => setInspectedPoster(null)}>✕</button>
-            <img src={inspectedPoster} alt="Poster" className="lightbox-img" />
-          </div>
-        </div>
-      )}
     </>
   );
 }

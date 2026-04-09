@@ -4,7 +4,6 @@ import "./globals.css";
 import { Analytics } from "@vercel/analytics/next";
 import { SpeedInsights } from "@vercel/speed-insights/next";
 import { Navbar } from "@/components/ui/navbar";
-import { SmokeBackground } from "@/components/ui/spooky-smoke-animation";
 import { ScrollRevealInit } from "@/components/ui/scroll-reveal-init";
 import { Bebas_Neue, Montserrat, Playfair_Display } from "next/font/google";
 
@@ -130,14 +129,20 @@ export default function RootLayout({
         />
       </head>
       <body className="antialiased">
-        <div className="site-smoke">
-          <SmokeBackground smokeColor="#B87800" />
-        </div>
         <Navbar />
         <ScrollRevealInit />
         {children}
         <Analytics />
         <SpeedInsights />
+        <Script
+          src="https://www.googletagmanager.com/gtag/js?id=G-QCH5Y93935"
+          strategy="afterInteractive"
+        />
+        <Script
+          id="gtag-init"
+          strategy="afterInteractive"
+          dangerouslySetInnerHTML={{ __html: `window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-QCH5Y93935');` }}
+        />
         <Script
           id="clarity"
           strategy="afterInteractive"
